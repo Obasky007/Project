@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="sml2-removebg-preview.png">
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #22c55e;
+            box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700">
+        <h1 class="font-bold text-lg">Caveat:</h1>
+        <p class="mt-1 text-sm">This is a student's project and not an attempt to clone the existing webpage.</p>
+    </div>
+    <div>
+        <div class="bg-green-400 h-3 mb-4"></div>
+        <div class="flex gap-20">
+            <div><img src="smile2.png" alt class="hidden lg:block w-[640px] h-[500px]"></div>
+            <div
+                class="w-[360px] h-[500px] flex flex-col justify-center items-center md:absolute md:top-[80px] md:right-[120px]">
+                <form>
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="Untitled design (1).png" alt="smile logo" class="mb-4">
+                        <h1 class="text-black font-medium mb-4">Welcome!</h1>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-6">Sign
+                            in to Continue</h2>
+                        <p class="text-xs mb-3">You can use your SmileVoice &
+                            SelfCare App credentials to sign in</p>
+                        <input type="text" placeholder="SmileNumber/Username"
+                            class="border border-gray-300 rounded-md placeholder-gray-200 w-[100%] h-10 mb-4 px-3">
+                        <input type="password" placeholder="Password"
+                            class="border border-gray-300 rounded-md placeholder-gray-200 w-[100%] h-10 mb-4 px-3">
+                        <div class="flex justify-center items-center gap-16 mb-6">
+                            <div><input type="checkbox" name="Remember-Me" id="remember-me"
+                                    class="mr-2 border-gray-300 border">
+                                <label for="remember-me" class="text-base text-gray-900">
+                                    Remember Me
+                                </label>
+                            </div>
+                            <a href="#" class="underline hover:no-underline hover:text-green-500">Forgot Your
+                                Password</a>
+                        </div>
+                        <button class="bg-green-500 text-white w-[100%] h-10 rounded-md hover:bg-green-600 mb-6">
+                            Sign In
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-sm mb-2">Not registered yet? <a href="#"
+                                class="hover:text-green-500 text-sm">Register</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="bg-green-400 h-0.5 mt-10 mb-5"></div>
+    <div class="flex justify-between items-center px-10 mb-7">
+        <div class="font-normal text-xs">Company Registration No: 722728</div>
+        <div class="font-normal text-xs">Copyright © 2025 Smile Communications Nigeria Ltd.</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>

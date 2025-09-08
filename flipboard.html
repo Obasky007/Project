@@ -7,7 +7,6 @@
     <title>Flipboard: Your Social Magazine</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="FLIP-LOGO.png">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -17,7 +16,7 @@
 </head>
 
 <body>
-    <div class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700">
+    <div class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex flex-col sm:flex-row gap-2">
         <h1 class="font-bold text-lg">Caveat:</h1>
         <p class="mt-1 text-sm">This is a student's project and not an attempt to clone the existing webpage.</p>
     </div>
@@ -389,7 +388,7 @@
     <div class="flex justify-center mt-8 mb-4">
         <button class="bg-red-500 rounded px-5 py-3 text-sm font-medium text-white">Read more</button>
     </div>
-    <footer class="mt-12 py-8 border-gray-300">
+    <footer class="mt-12 py-8 border-gray-300 mb-14">
         <div class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-sm text-gray-600">
             <a href="" class="underline hover:text-black">Log In</a>
             <a href="" class="underline hover:text-black">Newsletters</a>
@@ -403,10 +402,11 @@
             <a href="" class="underline hover:text-black">Sitemap</a>
         </div>
 
-        <div class="mt-4 text-center text-xs text-gray-500">
+        <div class="mt-4 text-center text-xs text-gray-500 underline">
             &copy; 2025 Flipboard
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>

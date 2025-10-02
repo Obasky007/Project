@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipboard: Your Social Magazine</title>
+    <script src="tailwind.js"></script>
+    <link rel="icon" type="image/x-icon" href="FLIP-LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex flex-col sm:flex-row gap-2">
+        <h1 class="font-bold text-lg">Caveat:</h1>
+        <p class="mt-1 text-sm">This is a student's project and not an attempt to clone the existing webpage.</p>
+    </div>
+    <ul class="flex gap-4 ml-20">
+        <li class=" hover:text-blue-500 hover:underline"><a href="index.html">Project 1</a></li>
+        <li class=" hover:text-blue-500 hover:underline"><a href="wappalyzer.html">Project 2</a></li>
+        <li class=" hover:text-blue-500 hover:underline"><a href="flipboard.html">Project 3</a></li>
+    </ul>
+    <nav class="sticky top-0 bg-white border-b">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
+            <div>
+                <img src="flipb-removebg-preview.png" alt="Flipboard logo" class="w-32 h-14">
+            </div>
+            <div class="flex items-center gap-6">
+                <p class="text-gray-600 text-sm">Newsletters</p>
+
+                <div class="relative hidden md:block">
+                    <input type="text" placeholder="Search Flipboard"
+                        class="block w-64 p-2 pl-9 text-sm border border-gray-300 rounded-md bg-gray-50">
+                    <svg class="w-4 h-4 text-gray-500 absolute top-2 left-3" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                </div>
+
+                <button class="bg-red-500 text-white rounded md:px-3 px-5 py-1 md:text-sm text-xs font-medium">Sign
+                    up</button>
+                <button class="md:text-sm text-xs text-gray-700">Log in</button>
+            </div>
+        </div>
+    </nav>
+    <section class="text-center mt-16">
+        <h1 class="text-gray-900 text-4xl md:text-6xl font-bold">GET INFORMED</h1>
+        <h1 class="text-gray-900 text-4xl md:text-6xl font-bold mt-2">GET INSPIRED</h1>
+        <div class="bg-red-600 h-[10px] w-[190px] md:w-[320px] m-auto mt-2"></div>
+        <p class="text-lg md:text-xl mt-4 text-gray-700">Stories Curated For You</p>
+        <button class="bg-red-500 text-white py-3 px-8 rounded-md mt-8 font-bold text-lg md:w-auto w-60">Sign
+            up</button>
+    </section>
+    <div class="flex justify-center gap-6 md:gap-10 text-gray-600 mt-20 text-sm font-medium flex-wrap">
+        <p class="font-bold text-black">NEWS</p>
+        <p class="hover:font-bold hover:text-black">ENTERTAINMENT</p>
+        <p class="hover:font-bold hover:text-black">TECHNOLOGY</p>
+        <p class="hover:font-bold hover:text-black">TRAVEL</p>
+        <p class="hover:font-bold hover:text-black">FOOD</p>
+        <p class="hover:font-bold hover:text-black">SPORTS</p>
+        <p class="hover:font-bold hover:text-black">FLIPBOARD TV</p>
+    </div>
+
+    <div class="border-t border-gray-300 mt-6 mb-5 max-w-7xl mx-auto"></div>
+    <div class="flex flex-col gap-6">
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl w-full mx-auto px-4">
+            <div class="bg-white rounded-xl shadow overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="smile2.png" class="w-7 h-7 rounded-full" alt="NYT logo">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">The New York Times</p>
+                        <p class="text-gray-500">flipped into Politics</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="High_angle_view_of_a_brokenhearted_man_at_a_lonely_crossroads_in_a_dark_decayi_20250901160431_04.png"
+                    alt="Trump">
+                <div class="p-4">
+                    <p class="text-xs text-gray-500">Now</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        Trump Administration to End Security Programs Protecting European Allies From Russia
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">The New York Times - Erica L. Green</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 text-gray-500 text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="sadd.png" class="w-7 h-7 rounded-full" alt="Rolling Stone logo">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">Rolling Stone</p>
+                        <p class="text-gray-500">flipped into Politics News</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="quiet_empty_urban_street_with_long_shadows_cinematic_lighting_moody_and_minima_20250810122556_02.png"
+                    alt="RFK Jr">
+                <div class="p-4">
+                    <p class="text-xs text-gray-500">19 hours ago</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        RFK Jr. Claims mRNA Vaccines Kill People in Heated Senate Hearing
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">Rolling Stone - Naomi LaChance</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 mt-6 text-black text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow border overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="03409070-d89e-4656-8cef-659076b1bbfa.jpeg" alt="" class="w-7 h-7 rounded-full">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">Susan Tablet</p>
+                        <p class="text-gray-500">flipped into War Zone</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="ChatGPT Image Aug 31, 2025, 03_57_22 PM.png" alt="Venezuelan boat">
+                </img>
+                <div class="p-4">
+
+                    <p class="text-xs text-gray-500">19 hours ago</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        US accused of 'illegal massacre' after strike on Venezuelan boat
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">Al Jazeera</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 mt-6 text-black text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl w-full mx-auto px-4">
+            <div class="bg-white rounded-xl shadow border overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="smile2.png" class="w-7 h-7 rounded-full" alt="NYT logo">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">The New York Times</p>
+                        <p class="text-gray-500">flipped into Politics</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="High_angle_view_of_a_brokenhearted_man_at_a_lonely_crossroads_in_a_dark_decayi_20250901160431_04.png"
+                    alt="Trump">
+                <div class="p-4">
+                    <p class="text-xs text-gray-500">Now</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        Trump Administration to End Security Programs Protecting European Allies From Russia
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">The New York Times - Erica L. Green</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 text-black text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow border overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="sadd.png" class="w-7 h-7 rounded-full" alt="Rolling Stone logo">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">Rolling Stone</p>
+                        <p class="text-gray-500">flipped into Politics News</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="quiet_empty_urban_street_with_long_shadows_cinematic_lighting_moody_and_minima_20250810122556_02.png"
+                    alt="RFK Jr">
+                <div class="p-4">
+                    <p class="text-xs text-gray-500">19 hours ago</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        RFK Jr. Claims mRNA Vaccines Kill People in Heated Senate Hearing
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">Rolling Stone - Naomi LaChance</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 mt-6 text-black text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow border overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="03409070-d89e-4656-8cef-659076b1bbfa.jpeg" alt="" class="w-7 h-7 rounded-full">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">Susan Tablet</p>
+                        <p class="text-gray-500">flipped into War Zone</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="ChatGPT Image Aug 31, 2025, 03_57_22 PM.png" alt="Venezuelan boat">
+                </img>
+                <div class="p-4">
+
+                    <p class="text-xs text-gray-500">19 hours ago</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        US accused of 'illegal massacre' after strike on Venezuelan boat
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">Al Jazeera</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 mt-6 text-black text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl w-full mx-auto px-4">
+            <div class="bg-white rounded-xl shadow border overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="smile2.png" class="w-7 h-7 rounded-full" alt="NYT logo">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">The New York Times</p>
+                        <p class="text-gray-500">flipped into Politics</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="High_angle_view_of_a_brokenhearted_man_at_a_lonely_crossroads_in_a_dark_decayi_20250901160431_04.png"
+                    alt="Trump">
+                <div class="p-4">
+                    <p class="text-xs text-gray-500">Now</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        Trump Administration to End Security Programs Protecting European Allies From Russia
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">The New York Times - Erica L. Green</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 text-black text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow border overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="sadd.png" class="w-7 h-7 rounded-full" alt="Rolling Stone logo">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">Rolling Stone</p>
+                        <p class="text-gray-500">flipped into Politics News</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="quiet_empty_urban_street_with_long_shadows_cinematic_lighting_moody_and_minima_20250810122556_02.png"
+                    alt="RFK Jr">
+                <div class="p-4">
+                    <p class="text-xs text-gray-500">19 hours ago</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        RFK Jr. Claims mRNA Vaccines Kill People in Heated Senate Hearing
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">Rolling Stone - Naomi LaChance</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 mt-6 text-black text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow border overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="03409070-d89e-4656-8cef-659076b1bbfa.jpeg" alt="" class="w-7 h-7 rounded-full">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">Susan Tablet</p>
+                        <p class="text-gray-500">flipped into War Zone</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="ChatGPT Image Aug 31, 2025, 03_57_22 PM.png" alt="Venezuelan boat">
+                </img>
+                <div class="p-4">
+
+                    <p class="text-xs text-gray-500">19 hours ago</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        US accused of 'illegal massacre' after strike on Venezuelan boat
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">Al Jazeera</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 mt-6 text-black text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl w-full mx-auto px-4">
+            <div class="bg-white rounded-xl shadow border overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="smile2.png" class="w-7 h-7 rounded-full" alt="NYT logo">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">The New York Times</p>
+                        <p class="text-gray-500">flipped into Politics</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="High_angle_view_of_a_brokenhearted_man_at_a_lonely_crossroads_in_a_dark_decayi_20250901160431_04.png"
+                    alt="Trump">
+                <div class="p-4">
+                    <p class="text-xs text-gray-500">Now</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        Trump Administration to End Security Programs Protecting European Allies From Russia
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">The New York Times - Erica L. Green</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 text-black text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow border overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="sadd.png" class="w-7 h-7 rounded-full" alt="Rolling Stone logo">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">Rolling Stone</p>
+                        <p class="text-gray-500">flipped into Politics News</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="quiet_empty_urban_street_with_long_shadows_cinematic_lighting_moody_and_minima_20250810122556_02.png"
+                    alt="RFK Jr">
+                <div class="p-4">
+                    <p class="text-xs text-gray-500">19 hours ago</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        RFK Jr. Claims mRNA Vaccines Kill People in Heated Senate Hearing
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">Rolling Stone - Naomi LaChance</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 mt-6 text-black text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow border overflow-hidden">
+                <div class="flex items-center px-4 py-3">
+                    <img src="03409070-d89e-4656-8cef-659076b1bbfa.jpeg" alt="" class="w-7 h-7 rounded-full">
+                    <div class="ml-3 text-sm">
+                        <p class="font-semibold text-gray-900">Susan Tablet</p>
+                        <p class="text-gray-500">flipped into War Zone</p>
+                    </div>
+                </div>
+                <img class="m-auto md:w-[350px] w-[260px] rounded-lg h-[230px] object-cover"
+                    src="ChatGPT Image Aug 31, 2025, 03_57_22 PM.png" alt="Venezuelan boat">
+                </img>
+                <div class="p-4">
+
+                    <p class="text-xs text-gray-500">19 hours ago</p>
+                    <h2 class="mt-1 text-lg font-semibold text-gray-900 leading-snug">
+                        US accused of 'illegal massacre' after strike on Venezuelan boat
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-600">Al Jazeera</p>
+                </div>
+                <div class="flex justify-between items-center px-4 py-3 mt-6 text-black text-lg">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center mt-8 mb-4">
+        <button class="bg-red-500 rounded px-5 py-3 text-sm font-medium text-white">Read more</button>
+    </div>
+    <footer class="mt-12 py-8 border-gray-300 mb-14">
+        <div class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-sm text-gray-600">
+            <a href="" class="underline hover:text-black">Log In</a>
+            <a href="" class="underline hover:text-black">Newsletters</a>
+            <a href="" class="underline hover:text-black">About Us</a>
+            <a href="" class="underline hover:text-black">Blog</a>
+            <a href="" class="underline hover:text-black">Tools</a>
+            <a href="" class="underline hover:text-black">Publishers</a>
+            <a href="" class="underline hover:text-black">Help</a>
+            <a href="" class="underline hover:text-black">Terms</a>
+            <a href="" class="underline hover:text-black">Privacy Policy</a>
+            <a href="" class="underline hover:text-black">Sitemap</a>
+        </div>
+
+        <div class="mt-4 text-center text-xs text-gray-500 underline">
+            &copy; 2025 Flipboard
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>

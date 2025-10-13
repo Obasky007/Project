@@ -1,798 +1,782 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale =1.0">
-  <title>Find out what websites are built with - Wappalyzer</title>
-  <script src="tailwind.js"></script>
-  <link rel="icon" type="image/x-icon" href="wapplogo-removebg-preview.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale =1.0">
+        <title>Find out what websites are built with - Wappalyzer</title>
+        <script src="tailwind.js"></script>
+        <link rel="icon" type="image/x-icon" href="wapplogo-removebg-preview.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
     .pick {
       background-color: #4809ad;
     }
-  </style>
-</head>
-
-<body>
-  <div class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex flex-col sm:flex-row gap-2">
-    <h1 class="font-bold text-lg">Caveat:</h1>
-    <p class="mt-1 text-sm">This is a student's project and not an attempt to clone the existing webpage.</p>
-  </div>
-  <ul class="flex gap-4 ml-20">
-    <li class=" hover:text-blue-500 hover:underline"><a href="index.html">Project 1</a></li>
-    <li class=" hover:text-blue-500 hover:underline"><a href="wappalyzer.html">Project 2</a></li>
-    <li class=" hover:text-blue-500 hover:underline"><a href="flipboard.html">Project 3</a></li>
-  </ul>
-  <nav class="border-gray-200 pick pick">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="#" class="flex items-center space-x-3">
-        <svg viewBox="0 0 410.48 348.77" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-          <path d="M116.8 175.47l104.64 43.87 70.24-52.36-55.9-80.66-118.97 89.15z" fill="#32067c" />
-          <path d="M205.24 268.7l-181.7-94.3L0 191.25v10.32l205.24 147.2 205.24-147.2v-10.3l-23.52-16.9z"
-            fill="#846ab0" />
-          <path
-            d="M205.24 0L0 147.2v10.3l205.24 147.2 205.24-147.2v-10.3L205.25 0zm26.86 145.26l-25.03-34.5 21.34-15.62 44.5 65.83-17.93 13.1-47.83-19.77-.2.14 27.24 34.86-17.92 13.1-89.97-32.54 21.4-15.66 47.03 18.3.26-.2-26.1-33.62 16.83-12.3 46.1 19.08.27-.2z"
-            fill="#fff" />
-        </svg>
-        <span class="text-2xl font-bold text-white">Wappalyzer</span>
-      </a>
-      <button data-drawer-target="mobile-menu" data-drawer-show="mobile-menu" data-drawer-placement="right"
-        aria-controls="mobile-menu" type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-white rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600">
-        <span class="sr-only">Open menu</span>
-        <i class="fa-solid fa-bars text-xl"></i>
-      </button>
-
-      <div class="hidden w-full md:flex md:w-auto md:items-center space-x-2">
-        <button
-          class="text-white font-bold hover:bg-slate-300 hover:bg-opacity-10 transition-all px-4 py-1 rounded-sm">Products
-          <i class="fas fa-chevron-down"></i></button>
-        <button
-          class="text-white font-bold hover:bg-slate-300 hover:bg-opacity-10 transition-all px-4 py-1 rounded-sm">Pricing</button>
-        <button
-          class="text-white font-bold hover:bg-slate-300 hover:bg-opacity-10 transition-all px-4 py-1 rounded-sm">Resources
-          <i class="fas fa-chevron-down"></i></button>
-        <button
-          class="text-white font-bold hover:bg-slate-300 hover:bg-opacity-10 transition-all px-4 py-1 rounded-sm">Sign
-          in</button>
-        <button
-          class=" text-white font-semibold border-2 px-4 py-1 rounded-md ml-4 mr-4 transition-all hover:bg-slate-300 hover:bg-opacity-10">Sign
-          up free</button>
-        <i
-          class="fa-regular fa-moon text-white cursor-pointer px-4 hover:bg-slate-300 hover:bg-opacity-10 rounded-full py-4"></i>
-        <i
-          class="fa-solid fa-magnifying-glass text-white cursor-pointer px-4 hover:bg-slate-300 hover:bg-opacity-10 rounded-full py-4"></i>
-      </div>
-    </div>
-    <div id="mobile-menu"
-      class="fixed top-0 right-0 z-40 h-screen w-72 translate-x-full bg-white text-black transition-transform"
-      tabindex="-1" aria-labelledby="drawer-label">
-
-
-      <div class="p-4 space-y-4 text-base">
-        <button class="w-full text-left font-semibold">Sign up free</button>
-        <button class="w-full text-left">Sign in</button>
-        <hr>
-
-        <div>
-          <p class="uppercase text-gray-500 text-sm mb-2">Products</p>
-          <ul class="space-y-2">
-            <li><a href="#" class="block hover:text-purple-700">Technology lookup</a></li>
-            <li><a href="#" class="block hover:text-purple-700">Lead lists</a></li>
-            <li><a href="#" class="block hover:text-purple-700">Email verification</a></li>
-            <li><a href="#" class="block hover:text-purple-700">Keyword search</a></li>
-            <li><a href="#" class="block hover:text-purple-700">Website alerts</a></li>
-            <li><a href="#" class="block hover:text-purple-700">Apps</a></li>
-          </ul>
+        </style>
+    </head>
+    <body>
+        <div class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex flex-col sm:flex-row gap-2">
+            <h1 class="font-bold text-lg">Caveat:</h1>
+            <p class="mt-1 text-sm">This is a student's project and not an attempt to clone the existing webpage.</p>
         </div>
-
-        <hr>
-        <button class="w-full text-left">Pricing</button>
-      </div>
-    </div>
-  </nav>
-  <section class="pick flex flex-col justify-center items-center text-center py-20 px-4">
-    <h1 class="text-4xl font-bold text-white mb-6">Identify technologies on websites</h1>
-    <p class="text-white max-w-2xl mb-8">
-      Find out the technology stack of any website. Create lists of websites that use
+        <ul class="flex gap-4 ml-20">
+            <li class=" hover:text-blue-500 hover:underline">
+                <a href="index.html">Project 1</a>
+            </li>
+            <li class=" hover:text-blue-500 hover:underline">
+                <a href="wappalyzer.html">Project 2</a>
+            </li>
+            <li class=" hover:text-blue-500 hover:underline">
+                <a href="flipboard.html">Project 3</a>
+            </li>
+            <li class=" hover:text-blue-500 hover:underline">
+                <a href="quicken.html">Project 4</a>
+            </li>
+        </ul>
+        <nav class="border-gray-200 pick pick">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3">
+                    <svg
+                        viewBox="0 0 410.48 348.77"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                    >
+                        <path d="M116.8 175.47l104.64 43.87 70.24-52.36-55.9-80.66-118.97 89.15z" fill="#32067c"/>
+                        <path d="M205.24 268.7l-181.7-94.3L0 191.25v10.32l205.24 147.2 205.24-147.2v-10.3l-23.52-16.9z" fill="#846ab0"/>
+                        <path d="M205.24 0L0 147.2v10.3l205.24 147.2 205.24-147.2v-10.3L205.25 0zm26.86 145.26l-25.03-34.5 21.34-15.62 44.5 65.83-17.93 13.1-47.83-19.77-.2.14 27.24 34.86-17.92 13.1-89.97-32.54 21.4-15.66 47.03 18.3.26-.2-26.1-33.62 16.83-12.3 46.1 19.08.27-.2z" fill="#fff"/>
+                    </svg>
+                    <span class="text-2xl font-bold text-white">Wappalyzer</span>
+                </a>
+                <button
+                    data-drawer-target="mobile-menu"
+                    data-drawer-show="mobile-menu"
+                    data-drawer-placement="right"
+                    aria-controls="mobile-menu"
+                    type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-white rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
+                >
+                    <span class="sr-only">Open menu</span>
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+                <div class="hidden w-full md:flex md:w-auto md:items-center space-x-2">
+                    <button class="text-white font-bold hover:bg-slate-300 hover:bg-opacity-10 transition-all px-4 py-1 rounded-sm">
+                        Products
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <button class="text-white font-bold hover:bg-slate-300 hover:bg-opacity-10 transition-all px-4 py-1 rounded-sm">Pricing</button>
+                    <button class="text-white font-bold hover:bg-slate-300 hover:bg-opacity-10 transition-all px-4 py-1 rounded-sm">
+                        Resources
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <button class="text-white font-bold hover:bg-slate-300 hover:bg-opacity-10 transition-all px-4 py-1 rounded-sm">
+                        Sign
+          in
+                    </button>
+                    <button class=" text-white font-semibold border-2 px-4 py-1 rounded-md ml-4 mr-4 transition-all hover:bg-slate-300 hover:bg-opacity-10">
+                        Sign
+          up free
+                    </button>
+                    <i class="fa-regular fa-moon text-white cursor-pointer px-4 hover:bg-slate-300 hover:bg-opacity-10 rounded-full py-4"></i>
+                    <i class="fa-solid fa-magnifying-glass text-white cursor-pointer px-4 hover:bg-slate-300 hover:bg-opacity-10 rounded-full py-4"></i>
+                </div>
+            </div>
+            <div
+                id="mobile-menu"
+                class="fixed top-0 right-0 z-40 h-screen w-72 translate-x-full bg-white text-black transition-transform"
+                tabindex="-1"
+                aria-labelledby="drawer-label"
+            >
+                <div class="p-4 space-y-4 text-base">
+                    <button class="w-full text-left font-semibold">Sign up free</button>
+                    <button class="w-full text-left">Sign in</button>
+                    <hr>
+                    <div>
+                        <p class="uppercase text-gray-500 text-sm mb-2">Products</p>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="block hover:text-purple-700">Technology lookup</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:text-purple-700">Lead lists</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:text-purple-700">Email verification</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:text-purple-700">Keyword search</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:text-purple-700">Website alerts</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:text-purple-700">Apps</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <button class="w-full text-left">Pricing</button>
+                </div>
+            </div>
+        </nav>
+        <section class="pick flex flex-col justify-center items-center text-center py-20 px-4">
+            <h1 class="text-4xl font-bold text-white mb-6">Identify technologies on websites</h1>
+            <p class="text-white max-w-2xl mb-8">
+                Find out the technology stack of any website. Create lists of websites that use
       certain technologies, with company and contact details. Use our tools for lead generation, market
       analysis and competitor research.
-    </p>
-    <div class="w-full max-w-2xl">
-      <div class="relative">
-        <input type="text" placeholder="Website URL, technology, keyword or email address"
-          class="w-full h-12 px-6 py-4 rounded-md" />
-        <button class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <h1 class="text-3xl text-gray-600 text-center mt-10">Empower your sales and marketing teams</h1>
-<div class="mt-10">
-  <div class="flex md:flex-row flex-col justify-center items-center">
-    <div class="flex mt-10 px-4 gap-5">
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-globe text-[#6508d6] text-lg"></i>
+            </p>
+            <div class="w-full max-w-2xl">
+                <div class="relative">
+                    <input type="text" placeholder="Website URL, technology, keyword or email address" class="w-full h-12 px-6 py-4 rounded-md">
+                    <button class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <h1 class="text-3xl text-gray-600 text-center mt-10">Empower your sales and marketing teams</h1>
+        <div class="mt-10">
+            <div class="flex md:flex-row flex-col justify-center items-center">
+                <div class="flex mt-10 px-4 gap-5">
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-globe text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Website profiling</h1>
+                        <p class="text-gray-400 text-xs">Find out what website are built with</p>
+                    </div>
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-user-friends text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Lead generation</h1>
+                        <p class="text-gray-400 text-xs">Find prospects by the technologies they use</p>
+                    </div>
+                </div>
+                <div class="flex mt-10 px-4 gap-5">
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-chart-bar text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Market research</h1>
+                        <p class="text-gray-400 text-xs">Compare market shares and technology trends.</p>
+                    </div>
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-user-secret text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Competitor analysis</h1>
+                        <p class="text-gray-400 text-xs">Discover who uses competitors' software.</p>
+                    </div>
+                </div>
+                <div class="flex mt-10 px-4 gap-5">
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-database text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Data enrichment</h1>
+                        <p class="text-gray-400 text-xs">Technology, company and contact information.</p>
+                    </div>
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-chart-line text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Custom reports</h1>
+                        <p class="text-gray-400 text-xs">Create lists of websites and contacts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col justify-center items-center">
+                <div class="flex mt-10 px-4 gap-5">
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-globe text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Website profiling</h1>
+                        <p class="text-gray-400 text-xs">Find out what website are built with</p>
+                    </div>
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-user-friends text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Lead generation</h1>
+                        <p class="text-gray-400 text-xs">Find prospects by the technologies they use</p>
+                    </div>
+                </div>
+                <div class="flex mt-10 px-4 gap-5">
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-chart-bar text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Market research</h1>
+                        <p class="text-gray-400 text-xs">Compare market shares and technology trends.</p>
+                    </div>
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-user-secret text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Competitor analysis</h1>
+                        <p class="text-gray-400 text-xs">Discover who uses competitors' software.</p>
+                    </div>
+                </div>
+                <div class="flex mt-10 px-4 gap-5">
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-database text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Data enrichment</h1>
+                        <p class="text-gray-400 text-xs">Technology, company and contact information.</p>
+                    </div>
+                    <div class="flex flex-col ml-2 w-44">
+                        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
+                            <i class="fas fa-chart-line text-[#6508d6] text-lg"></i>
+                        </div>
+                        <h1 class="text-[#6508d6] text-sm font-bold">Custom reports</h1>
+                        <p class="text-gray-400 text-xs">Create lists of websites and contacts.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Website profiling</h1>
-        <p class="text-gray-400 text-xs">Find out what website are built with</p>
-      </div>
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-user-friends text-[#6508d6] text-lg"></i>
-        </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Lead generation</h1>
-        <p class="text-gray-400 text-xs">Find prospects by the technologies they use</p>
-      </div>
-    </div>
-
-    <div class="flex mt-10 px-4 gap-5">
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-chart-bar text-[#6508d6] text-lg"></i>
-        </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Market research</h1>
-        <p class="text-gray-400 text-xs">Compare market shares and technology trends.</p>
-      </div>
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-user-secret text-[#6508d6] text-lg"></i>
-        </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Competitor analysis</h1>
-        <p class="text-gray-400 text-xs">Discover who uses competitors' software.</p>
-      </div>
-    </div>
-
-    <div class="flex mt-10 px-4 gap-5">
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-database text-[#6508d6] text-lg"></i>
-        </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Data enrichment</h1>
-        <p class="text-gray-400 text-xs">Technology, company and contact information.</p>
-      </div>
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-chart-line text-[#6508d6] text-lg"></i>
-        </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Custom reports</h1>
-        <p class="text-gray-400 text-xs">Create lists of websites and contacts.</p>
-      </div>
-    </div>
-  </div>
-  <div class="flex md:flex-row flex-col justify-center items-center">
-    <div class="flex mt-10 px-4 gap-5">
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-globe text-[#6508d6] text-lg"></i>
-        </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Website profiling</h1>
-        <p class="text-gray-400 text-xs">Find out what website are built with</p>
-      </div>
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-user-friends text-[#6508d6] text-lg"></i>
-        </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Lead generation</h1>
-        <p class="text-gray-400 text-xs">Find prospects by the technologies they use</p>
-      </div>
-    </div>
-
-    <div class="flex mt-10 px-4 gap-5">
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-chart-bar text-[#6508d6] text-lg"></i>
-        </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Market research</h1>
-        <p class="text-gray-400 text-xs">Compare market shares and technology trends.</p>
-      </div>
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-user-secret text-[#6508d6] text-lg"></i>
-        </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Competitor analysis</h1>
-        <p class="text-gray-400 text-xs">Discover who uses competitors' software.</p>
-      </div>
-    </div>
-
-    <div class="flex mt-10 px-4 gap-5">
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-database text-[#6508d6] text-lg"></i>
-        </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Data enrichment</h1>
-        <p class="text-gray-400 text-xs">Technology, company and contact information.</p>
-      </div>
-      <div class="flex flex-col ml-2 w-44">
-        <div class="h-8 w-8 flex items-center justify-center rounded-full bg-[#b2acbe] mb-2">
-          <i class="fas fa-chart-line text-[#6508d6] text-lg"></i>
-        </div>
-        <h1 class="text-[#6508d6] text-sm font-bold">Custom reports</h1>
-        <p class="text-gray-400 text-xs">Create lists of websites and contacts.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <section class="w-full px-6 py-12 md:px-16 lg:px-24">
-    <div class="grid md:grid-cols-2 gap-10 items-center justify-between">
-      <div>
-        <p class="uppercase text-sm font-semibold text-purple-700 tracking-wider mb-2">Technology Lookup</p>
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">
-          Find out what websites are built with
-        </h2>
-        <p class="text-gray-600 mb-6">
-          Instantly reveal the technology stack of any website, such as CMS, ecommerce platform
+        <section class="w-full px-6 py-12 md:px-16 lg:px-24">
+            <div class="grid md:grid-cols-2 gap-10 items-center justify-between">
+                <div>
+                    <p class="uppercase text-sm font-semibold text-purple-700 tracking-wider mb-2">Technology Lookup</p>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">
+                        Find out what websites are built with
+                    </h2>
+                    <p class="text-gray-600 mb-6">
+                        Instantly reveal the technology stack of any website, such as CMS, ecommerce platform
           or payment processor, as well as company and contact details.
-        </p>
-        <div class="flex flex-wrap gap-3 mb-6">
-          <button class="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-5 py-2 rounded-lg shadow">
-            Look up a website <i class="fas fa-globe"></i>
-          </button>
-          <button class="bg-purple-100 hover:bg-purple-200 text-purple-700 font-semibold px-5 py-2 rounded-lg">
-            Upload a list <i class="fas fa-file-alt"></i>
-          </button>
-          <button class="bg-purple-100 hover:bg-purple-200 text-purple-700 font-semibold px-5 py-2 rounded-lg">
-            API access <i class="fas fa-code"></i>
-          </button>
-        </div>
-        <div>
-          <h3 class="uppercase text-sm font-semibold tracking-wider text-gray-700 mb-2">Highlights</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li class="flex items-center gap-2">
-              <span class="text-green-600 fas fa-check-circle"></span> Instant results
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="text-green-600 fas fa-check-circle"></span> 50 Free monthly lookups
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="text-green-600 fas fa-check-circle"></span> Perform up to 100,000 lookups at once
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="justify-center hidden md:flex">
-        <img src="image-removebg-preview.png" alt="Illustration" class="max-w-md w-full">
-      </div>
-    </div>
-  </section>
-
-  <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
-
-  <section class="pb-12">
-    <div class="container mx-auto px-4">
-      <div class="md:flex md:items-center">
-        <div class="md:w-1/2 md:block hidden">
-          <img src="pic.png" alt="Illustration" class="w-full h-auto">
-        </div>
-        <div class="md:w-1/2 md:pl-16 mt-8 md:mt-0">
-          <div class="flex items-center text-gray-400 mb-4">
-            <i class="fas fa-list-ul mr-2"></i>
-            <span class="font-semibold text-sm">LEAD LISTS</span>
-          </div>
-          <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Create lists of websites and contacts</h1>
-          <p class="text-gray-600 mb-6">
-            Find prospects by the technologies they use. Lead lists contain websites, company and contact details,
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <button class="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-5 py-2 rounded-lg shadow">
+                            Look up a website
+                            <i class="fas fa-globe"></i>
+                        </button>
+                        <button class="bg-purple-100 hover:bg-purple-200 text-purple-700 font-semibold px-5 py-2 rounded-lg">
+                            Upload a list
+                            <i class="fas fa-file-alt"></i>
+                        </button>
+                        <button class="bg-purple-100 hover:bg-purple-200 text-purple-700 font-semibold px-5 py-2 rounded-lg">
+                            API access
+                            <i class="fas fa-code"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <h3 class="uppercase text-sm font-semibold tracking-wider text-gray-700 mb-2">Highlights</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <span class="text-green-600 fas fa-check-circle"></span>
+                                Instant results
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-green-600 fas fa-check-circle"></span>
+                                50 Free monthly lookups
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-green-600 fas fa-check-circle"></span>
+                                Perform up to 100,000 lookups at once
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="justify-center hidden md:flex">
+                    <img src="image-removebg-preview.png" alt="Illustration" class="max-w-md w-full">
+                </div>
+            </div>
+        </section>
+        <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
+        <section class="pb-12">
+            <div class="container mx-auto px-4">
+                <div class="md:flex md:items-center">
+                    <div class="md:w-1/2 md:block hidden">
+                        <img src="pic.png" alt="Illustration" class="w-full h-auto">
+                    </div>
+                    <div class="md:w-1/2 md:pl-16 mt-8 md:mt-0">
+                        <div class="flex items-center text-gray-400 mb-4">
+                            <i class="fas fa-list-ul mr-2"></i>
+                            <span class="font-semibold text-sm">LEAD LISTS</span>
+                        </div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Create lists of websites and contacts</h1>
+                        <p class="text-gray-600 mb-6">
+                            Find prospects by the technologies they use. Lead lists contain websites, company and contact details,
             social media profiles and more. Create and export custom reports for any web technology or keyword based on
             industry, website traffic and location.
-          </p>
-          <div class="flex flex-wrap items-center space-x-2 text-sm text-gray-500 mb-6">
-            <span>List all</span>
-            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-md font-semibold">Fashion</span>
-            <span>websites that use</span>
-            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-md font-semibold">Shopify</span>
-            <span>in</span>
-            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-md font-semibold">United States</span>
-            <span>with</span>
-            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-md font-semibold">high traffic</span>
-          </div>
-          <button
-            class="bg-purple-600 text-white font-bold py-3 px-6 rounded-md hover:bg-purple-700 transition duration-300">
-            Create a list
-            <i class="fas fa-file-alt ml-2"></i>
-          </button>
-          <div class="mt-8">
-            <h2 class="text-xl font-bold text-gray-800 mb-4">HIGHLIGHTS</h2>
-            <ul class="space-y-2 text-gray-600">
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>Millions of companies tracked globally</span>
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>Organic data with traffic markers</span>
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>Fresh and accurate data</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
-
-  <section class="py-14">
-    <div class="container mx-auto px-4">
-      <div class="md:flex md:items-center">
-        <div class="md:w-1/2">
-          <div class="flex items-center text-purple-600 mb-4">
-            <i class="fas fa-bell mr-2"></i>
-            <span class="font-semibold text-sm">WEBSITE ALERTS</span>
-          </div>
-          <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Monitor your competitors' websites</h1>
-          <p class="text-gray-600 mb-6">
-            Get notified when a website's technology stack changes. Be the first to know when a competitor moves to a
+                        </p>
+                        <div class="flex flex-wrap items-center space-x-2 text-sm text-gray-500 mb-6">
+                            <span>List all</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-md font-semibold">Fashion</span>
+                            <span>websites that use</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-md font-semibold">Shopify</span>
+                            <span>in</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-md font-semibold">United States</span>
+                            <span>with</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-md font-semibold">high traffic</span>
+                        </div>
+                        <button class="bg-purple-600 text-white font-bold py-3 px-6 rounded-md hover:bg-purple-700 transition duration-300">
+                            Create a list
+                            <i class="fas fa-file-alt ml-2"></i>
+                        </button>
+                        <div class="mt-8">
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">HIGHLIGHTS</h2>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Millions of companies tracked globally</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Organic data with traffic markers</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Fresh and accurate data</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
+        <section class="py-14">
+            <div class="container mx-auto px-4">
+                <div class="md:flex md:items-center">
+                    <div class="md:w-1/2">
+                        <div class="flex items-center text-purple-600 mb-4">
+                            <i class="fas fa-bell mr-2"></i>
+                            <span class="font-semibold text-sm">WEBSITE ALERTS</span>
+                        </div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Monitor your competitors' websites</h1>
+                        <p class="text-gray-600 mb-6">
+                            Get notified when a website's technology stack changes. Be the first to know when a competitor moves to a
             new CMS, ecommerce platform or any other technology.
-          </p>
-          <button
-            class="bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition duration-300">
-            Create an alert
-            <i class="fas fa-bell ml-2"></i>
-          </button>
-          <div class="mt-8">
-            <h2 class="text-xl font-bold text-gray-800 mb-4">HIGHLIGHTS</h2>
-            <ul class="space-y-2 text-gray-600">
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>Same-day notifications</span>
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>Create up to 500 alerts</span>
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>Get 5 alerts free</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="md:w-1/2 mt-8 md:block hidden">
-          <img src="pic2.png" alt="Illustration" class="w-auto h-auto">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
-
-  <section class="py-16">
-    <div class="container mx-auto px-4">
-      <div class="md:flex md:items-center">
-        <div class="md:w-1/2  md:block hidden">
-          <img src="pic3.png" alt="Illustration" class="w-[420px] h-auto">
-        </div>
-        <div class="md:w-1/2 md:pl-16 mt-8 md:mt-0">
-          <div class="flex items-center text-gray-400 mb-4">
-            <i class="fas fa-code mr-2"></i>
-            <span class="font-semibold text-sm">APIS</span>
-          </div>
-          <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Automate technology lookups</h1>
-          <p class="text-gray-600 mb-6">
-            The Wappalyzer APIs provide instant access to website technology stacks, company and contact details, social
+                        </p>
+                        <button class="bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition duration-300">
+                            Create an alert
+                            <i class="fas fa-bell ml-2"></i>
+                        </button>
+                        <div class="mt-8">
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">HIGHLIGHTS</h2>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Same-day notifications</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Create up to 500 alerts</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Get 5 alerts free</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:block hidden">
+                        <img src="pic2.png" alt="Illustration" class="w-auto h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="md:flex md:items-center">
+                    <div class="md:w-1/2  md:block hidden">
+                        <img src="pic3.png" alt="Illustration" class="w-[420px] h-auto">
+                    </div>
+                    <div class="md:w-1/2 md:pl-16 mt-8 md:mt-0">
+                        <div class="flex items-center text-gray-400 mb-4">
+                            <i class="fas fa-code mr-2"></i>
+                            <span class="font-semibold text-sm">APIS</span>
+                        </div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Automate technology lookups</h1>
+                        <p class="text-gray-600 mb-6">
+                            The Wappalyzer APIs provide instant access to website technology stacks, company and contact details, social
             media profiles, email verification and more. Track your prospects' technology choices, examine large numbers
             of websites or enrich your own datasets with technographic insights.
-          </p>
-          <div class="flex flex-wrap space-x-4 mb-8">
-            <button
-              class="bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition duration-300">
-              Compare APIs
-              <i class="fas fa-code ml-2"></i>
-            </button>
-            <button
-              class="bg-purple-100 text-purple-700 font-bold py-3 px-6 rounded-lg hover:bg-purple-200 transition duration-300">
-              API reference
-              <i class="fas fa-file-alt ml-2"></i>
-            </button>
-          </div>
-          <div>
-            <h2 class="text-xl font-bold text-gray-800 mb-4">HIGHLIGHTS</h2>
-            <ul class="space-y-2 text-gray-600">
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>Split-second results</span>
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>Analyse websites in real-time</span>
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>Free trial</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
-
-  <section class="py-14">
-    <div class="container mx-auto px-4">
-      <div class="md:flex md:items-center">
-        <div class="md:w-1/2">
-          <div class="flex items-center text-purple-600 mb-4">
-            <i class="fas fa-envelope mr-2"></i>
-            <span class="font-semibold text-sm">EMAIL VERIFICATION</span>
-          </div>
-          <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Prevent bounced emails</h1>
-          <p class="text-gray-600 mb-6">
-            Verify email addresses to prevent bounces, spam reports and fake website sign-ups. We run a number of live
+                        </p>
+                        <div class="flex flex-wrap space-x-4 mb-8">
+                            <button class="bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition duration-300">
+                                Compare APIs
+                                <i class="fas fa-code ml-2"></i>
+                            </button>
+                            <button class="bg-purple-100 text-purple-700 font-bold py-3 px-6 rounded-lg hover:bg-purple-200 transition duration-300">
+                                API reference
+                                <i class="fas fa-file-alt ml-2"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">HIGHLIGHTS</h2>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Split-second results</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Analyse websites in real-time</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Free trial</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
+        <section class="py-14">
+            <div class="container mx-auto px-4">
+                <div class="md:flex md:items-center">
+                    <div class="md:w-1/2">
+                        <div class="flex items-center text-purple-600 mb-4">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span class="font-semibold text-sm">EMAIL VERIFICATION</span>
+                        </div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Prevent bounced emails</h1>
+                        <p class="text-gray-600 mb-6">
+                            Verify email addresses to prevent bounces, spam reports and fake website sign-ups. We run a number of live
             checks for mail server connectivity, inbox availability and more, without sending an email to the address.
-          </p>
-          <div class="flex flex-wrap space-x-4 mb-8">
-            <button
-              class="bg-purple-600 text-white mb-1 md:mb-0 font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition duration-300">
-              Verify an address
-              <i class="fas fa-envelope ml-2"></i>
-            </button>
-            <button
-              class="bg-purple-100 text-purple-700 font-bold py-3 px-6 rounded-lg hover:bg-purple-200 transition duration-300">
-              Upload a list
-              <i class="fas fa-file-alt ml-2"></i>
-            </button>
-            <button
-              class="bg-purple-100 text-purple-700 font-bold py-3 px-6 rounded-lg hover:bg-purple-200 transition duration-300">
-              API
-              <i class="fas fa-code ml-2"></i>
-            </button>
-          </div>
-          <div>
-            <h2 class="text-xl font-bold text-gray-800 mb-4">HIGHLIGHTS</h2>
-            <ul class="space-y-2 text-gray-600">
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>Instant results</span>
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>50 Free monthly verifications</span>
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                <span>Perform up to 10,000 verifications at once</span>
-              </li>
-            </ul>
-          </div>
+                        </p>
+                        <div class="flex flex-wrap space-x-4 mb-8">
+                            <button class="bg-purple-600 text-white mb-1 md:mb-0 font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition duration-300">
+                                Verify an address
+                                <i class="fas fa-envelope ml-2"></i>
+                            </button>
+                            <button class="bg-purple-100 text-purple-700 font-bold py-3 px-6 rounded-lg hover:bg-purple-200 transition duration-300">
+                                Upload a list
+                                <i class="fas fa-file-alt ml-2"></i>
+                            </button>
+                            <button class="bg-purple-100 text-purple-700 font-bold py-3 px-6 rounded-lg hover:bg-purple-200 transition duration-300">
+                                API
+                                <i class="fas fa-code ml-2"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">HIGHLIGHTS</h2>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Instant results</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>50 Free monthly verifications</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Perform up to 10,000 verifications at once</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:block hidden">
+                        <img src="pic4.png" alt="Illustration" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
+        <div class="p-8">
+            <h1 class="text-3xl text-gray-800 font-sans mb-2">Apps</h1>
+            <p class="text-gray-600 font-sans mb-8">Wappalyzer works with the tools you use every day.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="flex flex-col p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" alt="Chrome" class="w-12 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">Chrome</h2>
+                    <p class="text-gray-500 font-sans">See the technologies of websites you visit in your browser.</p>
+                </div>
+                <div class="flex flex-col p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg" alt="Firefox" class="w-12 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">Firefox</h2>
+                    <p class="text-gray-500 font-sans">See the technologies of websites you visit in your browser.</p>
+                </div>
+                <div class="flex flex-col p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Microsoft_Edge_logo_%282019%29.png" alt="Edge" class="w-12 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">Edge</h2>
+                    <p class="text-gray-500 font-sans">See the technologies of websites you visit in your browser.</p>
+                </div>
+                <div class="flex flex-col p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Safari_browser_logo.svg" alt="Safari" class="w-12 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">Safari</h2>
+                    <p class="text-gray-500 font-sans">See the technologies of websites you visit in your browser.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                <div class="hidden md:flex flex-col p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" alt="Salesforce" class="w-12 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">Salesforce</h2>
+                    <p class="text-gray-500 font-sans">See the technology stacks of your leads in your CRM.</p>
+                </div>
+                <div class="hidden md:flex flex-col p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/HubSpot_Logo.svg" alt="HubSpot" class="w-20 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">HubSpot</h2>
+                    <p class="text-gray-500 font-sans">See the technology stacks of your leads in your CRM.</p>
+                </div>
+                <div class="hidden md:flex flex-col p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Pipedrive_Logo.svg" alt="Pipedrive" class="w-28 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">Pipedrive</h2>
+                    <p class="text-gray-500 font-sans">See the technology stacks of your leads in your CRM.</p>
+                </div>
+                <div class="hidden md:flex flex-col p-4">
+                    <img src="https://prowly-prod.s3.eu-west-1.amazonaws.com/uploads/60169/assets/601039/large-76a270657e9a0d62548da88a48ae0042.png" alt="Semrush" class="w-20 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">Semrush</h2>
+                    <p class="text-gray-500 font-sans">See the technology stacks of your clients and prospects in your CRM.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                <div class="hidden md:flex flex-col p-4">
+                    <img src="https://s3.eu-north-1.amazonaws.com/content.yourgpt.ai/chatbots/partner/1721931120.png" alt="Pabbly" class="w-16 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">Pabbly</h2>
+                    <p class="text-gray-500 font-sans">Automated workflows and email marketing.</p>
+                </div>
+                <div class="hidden md:flex flex-col p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Zapier_logo.svg" alt="Zapier" class="w-20 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">Zapier</h2>
+                    <p class="text-gray-500 font-sans">Connect Wappalyzer to the apps you use, no code required.</p>
+                </div>
+                <div class="hidden md:flex flex-col p-4">
+                    <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/make-color.png" alt="Make" class="w-12 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">Make</h2>
+                    <p class="text-gray-500 font-sans">Connect Wappalyzer to the apps you use, no code required.</p>
+                </div>
+                <div class="hidden md:flex flex-col p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" class="w-12 h-12 mb-4">
+                    <h2 class="text-xl font-sans text-gray-800">Gmail</h2>
+                    <p class="text-gray-500 font-sans">See the technology stacks of your contacts in Gmail.</p>
+                </div>
+            </div>
+            <div class="flex flex-col p-4">
+                <img src="https://img.favpng.com/21/18/25/apple-logo-business-png-favpng-7macCfLqzWpijUxLaAfaMTm9Y.jpg" alt="Iphone" class="w-16 h-12 mb-4">
+                <h2 class="text-xl font-sans text-gray-800">Iphone</h2>
+                <p class="text-gray-500 font-sans">Wappalyzer in your pocket.</p>
+            </div>
         </div>
-        <div class="md:w-1/2 mt-8 md:block hidden">
-          <img src="pic4.png" alt="Illustration" class="w-full h-auto">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
-
-  <div class="p-8">
-    <h1 class="text-3xl text-gray-800 font-sans mb-2">Apps</h1>
-    <p class="text-gray-600 font-sans mb-8">Wappalyzer works with the tools you use every day.</p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-      <div class="flex flex-col p-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg"
-          alt="Chrome" class="w-12 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">Chrome</h2>
-        <p class="text-gray-500 font-sans">See the technologies of websites you visit in your browser.</p>
-      </div>
-
-      <div class="flex flex-col p-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg" alt="Firefox"
-          class="w-12 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">Firefox</h2>
-        <p class="text-gray-500 font-sans">See the technologies of websites you visit in your browser.</p>
-      </div>
-
-      <div class="flex flex-col p-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Microsoft_Edge_logo_%282019%29.png" alt="Edge"
-          class="w-12 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">Edge</h2>
-        <p class="text-gray-500 font-sans">See the technologies of websites you visit in your browser.</p>
-      </div>
-
-      <div class="flex flex-col p-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Safari_browser_logo.svg" alt="Safari"
-          class="w-12 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">Safari</h2>
-        <p class="text-gray-500 font-sans">See the technologies of websites you visit in your browser.</p>
-      </div>
-
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-
-      <div class="hidden md:flex flex-col p-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" alt="Salesforce"
-          class="w-12 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">Salesforce</h2>
-        <p class="text-gray-500 font-sans">See the technology stacks of your leads in your CRM.</p>
-      </div>
-
-      <div class="hidden md:flex flex-col p-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/HubSpot_Logo.svg" alt="HubSpot"
-          class="w-20 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">HubSpot</h2>
-        <p class="text-gray-500 font-sans">See the technology stacks of your leads in your CRM.</p>
-      </div>
-
-      <div class="hidden md:flex flex-col p-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Pipedrive_Logo.svg" alt="Pipedrive"
-          class="w-28 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">Pipedrive</h2>
-        <p class="text-gray-500 font-sans">See the technology stacks of your leads in your CRM.</p>
-      </div>
-
-      <div class="hidden md:flex flex-col p-4">
-        <img
-          src="https://prowly-prod.s3.eu-west-1.amazonaws.com/uploads/60169/assets/601039/large-76a270657e9a0d62548da88a48ae0042.png"
-          alt="Semrush" class="w-20 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">Semrush</h2>
-        <p class="text-gray-500 font-sans">See the technology stacks of your clients and prospects in your CRM.</p>
-      </div>
-
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-
-      <div class="hidden md:flex flex-col p-4">
-        <img src="https://s3.eu-north-1.amazonaws.com/content.yourgpt.ai/chatbots/partner/1721931120.png" alt="Pabbly"
-          class="w-16 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">Pabbly</h2>
-        <p class="text-gray-500 font-sans">Automated workflows and email marketing.</p>
-      </div>
-
-      <div class="hidden md:flex flex-col p-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Zapier_logo.svg" alt="Zapier"
-          class="w-20 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">Zapier</h2>
-        <p class="text-gray-500 font-sans">Connect Wappalyzer to the apps you use, no code required.</p>
-      </div>
-
-      <div class="hidden md:flex flex-col p-4">
-        <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/make-color.png" alt="Make"
-          class="w-12 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">Make</h2>
-        <p class="text-gray-500 font-sans">Connect Wappalyzer to the apps you use, no code required.</p>
-      </div>
-
-      <div class="hidden md:flex flex-col p-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail"
-          class="w-12 h-12 mb-4">
-        <h2 class="text-xl font-sans text-gray-800">Gmail</h2>
-        <p class="text-gray-500 font-sans">See the technology stacks of your contacts in Gmail.</p>
-      </div>
-    </div>
-
-    <div class="flex flex-col p-4">
-      <img src="https://img.favpng.com/21/18/25/apple-logo-business-png-favpng-7macCfLqzWpijUxLaAfaMTm9Y.jpg"
-        alt="Iphone" class="w-16 h-12 mb-4">
-      <h2 class="text-xl font-sans text-gray-800">Iphone</h2>
-      <p class="text-gray-500 font-sans">Wappalyzer in your pocket.</p>
-    </div>
-  </div>
-
-  <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
-
-  <h1 class="uppercase text-gray-600 text-center mt-[60px] font-mono tracking-wider">Wappalyzer is trusted by thousands
+        <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
+        <h1 class="uppercase text-gray-600 text-center mt-[60px] font-mono tracking-wider">
+            Wappalyzer is trusted by thousands
     of professionals world-wide
-  </h1>
-
-  <div class="flex justify-center items-center mt-10 mb-10 gap-10 flex-wrap">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1920px-Google_2015_logo.svg.png"
-      alt="Google" class="h-5 grayscale">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle" class="h-3 grayscale">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1920px-Amazon_logo.svg.png"
-      alt="amazon" class="h-5 grayscale">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/IBM_Logo_2017.jpg" alt="Ibm" class="h-10 grayscale">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/PayPal-Logo-2022.png/250px-PayPal-Logo-2022.png"
-      alt="Paypal" class="h-7 grayscale">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/250px-EBay_logo.svg.png"
-      alt="Ebay" class="h-5 grayscale">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/330px-Shopify_logo_2018.svg.png"
-      alt="Shopify" class="h-5 grayscale">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/1280px-Stripe_Logo%2C_revised_2016.svg.png"
-      alt="stripe" class="h-5 grayscale">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/250px-SAP_2011_logo.svg.png"
-      alt="sap" class="h-5 grayscale">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/500px-Microsoft_logo_%282012%29.svg.png"
-      alt="microsoft" class="h-5 grayscale">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" alt="Salesforce"
-      class="h-10 grayscale">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Adobe_logo_and_wordmark_%282017%29.svg/500px-Adobe_logo_and_wordmark_%282017%29.svg.png"
-      alt="Adobe" class="h-5 grayscale">
-  </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
-    <div class="border rounded-lg p-6">
-      <div class="flex items-start space-x-4">
-        <img src="https://i.pravatar.cc/150?img=1" alt="Ilya Grigorik" class="w-16 h-16 rounded-full shadow-lg">
-        <div>
-          <p class="italic mb-4 text-gray-600">"Wappalyzer has proven to be a great tool to help us break down the
-            aggregate analysis of how the web is doing by various technologies."</p>
-          <p class="font-semibold text-gray-600">Ilya Grigorik</p>
-          <p class="text-sm text-gray-600">Principal Engineer at Shopify</p>
+        </h1>
+        <div class="flex justify-center items-center mt-10 mb-10 gap-10 flex-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1920px-Google_2015_logo.svg.png" alt="Google" class="h-5 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle" class="h-3 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1920px-Amazon_logo.svg.png" alt="amazon" class="h-5 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/IBM_Logo_2017.jpg" alt="Ibm" class="h-10 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/PayPal-Logo-2022.png/250px-PayPal-Logo-2022.png" alt="Paypal" class="h-7 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/250px-EBay_logo.svg.png" alt="Ebay" class="h-5 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/330px-Shopify_logo_2018.svg.png" alt="Shopify" class="h-5 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/1280px-Stripe_Logo%2C_revised_2016.svg.png" alt="stripe" class="h-5 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/250px-SAP_2011_logo.svg.png" alt="sap" class="h-5 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/500px-Microsoft_logo_%282012%29.svg.png" alt="microsoft" class="h-5 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" alt="Salesforce" class="h-10 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Adobe_logo_and_wordmark_%282017%29.svg/500px-Adobe_logo_and_wordmark_%282017%29.svg.png" alt="Adobe" class="h-5 grayscale">
         </div>
-      </div>
-    </div>
-
-    <div class="border rounded-lg p-6">
-      <div class="flex items-start space-x-4">
-        <img src="https://i.pravatar.cc/150?img=2" alt="Thomas Alibert" class="w-16 h-16 rounded-full shadow-lg">
-        <div>
-          <p class="italic mb-4 text-gray-600">"These days you need advanced marketing tools to stand out from the
-            competition. Wappalyzer help us do just that."</p>
-          <p class="font-semibold text-gray-600">Thomas Alibert</p>
-          <p class="text-sm text-gray-600">Growth Engineer at PayFit</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="border rounded-lg p-6">
-      <div class="flex items-start space-x-4">
-        <img src="https://i.pravatar.cc/150?img=3" alt="Michael Petselas" class="w-16 h-16 rounded-full shadow-lg">
-        <div>
-          <p class="italic mb-4 text-gray-600">"I use Wappalyzer all the time and it's been invaluable in being relevant
-            in my outreach."</p>
-          <p class="font-semibold text-gray-600">Michael Petselas</p>
-          <p class="text-sm text-gray-600">Customer Growth Specialist at HubSpot</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="border rounded-lg p-6">
-      <div class="flex items-start space-x-4">
-        <img src="https://i.pravatar.cc/150?img=4" alt="Roman Schweiger" class="w-16 h-16 rounded-full shadow-lg">
-        <div>
-          <p class="italic mb-4 text-gray-600">"Wappalyzer is an integral part of our sales process, enabling us to
-            optimise lead segmentation at scale. It's a total game changer for our organisation."</p>
-          <p class="font-semibold text-gray-600">Roman Schweiger</p>
-          <p class="text-sm text-gray-600">Head of Business Development at Boomerank</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="border rounded-lg p-6">
-      <div class="flex items-start space-x-4">
-        <img src="https://i.pravatar.cc/150?img=5" alt="Rick Viscomi" class="w-16 h-16 rounded-full shadow-lg">
-        <div>
-          <p class="italic mb-4 text-gray-600">"Wappalyzer has been such a useful part of the HTTP Archive dataset. It's
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+            <div class="border rounded-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Ilya Grigorik" class="w-16 h-16 rounded-full shadow-lg">
+                    <div>
+                        <p class="italic mb-4 text-gray-600">
+                            "Wappalyzer has proven to be a great tool to help us break down the
+            aggregate analysis of how the web is doing by various technologies."
+                        </p>
+                        <p class="font-semibold text-gray-600">Ilya Grigorik</p>
+                        <p class="text-sm text-gray-600">Principal Engineer at Shopify</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="https://i.pravatar.cc/150?img=2" alt="Thomas Alibert" class="w-16 h-16 rounded-full shadow-lg">
+                    <div>
+                        <p class="italic mb-4 text-gray-600">
+                            "These days you need advanced marketing tools to stand out from the
+            competition. Wappalyzer help us do just that."
+                        </p>
+                        <p class="font-semibold text-gray-600">Thomas Alibert</p>
+                        <p class="text-sm text-gray-600">Growth Engineer at PayFit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="https://i.pravatar.cc/150?img=3" alt="Michael Petselas" class="w-16 h-16 rounded-full shadow-lg">
+                    <div>
+                        <p class="italic mb-4 text-gray-600">
+                            "I use Wappalyzer all the time and it's been invaluable in being relevant
+            in my outreach."
+                        </p>
+                        <p class="font-semibold text-gray-600">Michael Petselas</p>
+                        <p class="text-sm text-gray-600">Customer Growth Specialist at HubSpot</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="https://i.pravatar.cc/150?img=4" alt="Roman Schweiger" class="w-16 h-16 rounded-full shadow-lg">
+                    <div>
+                        <p class="italic mb-4 text-gray-600">
+                            "Wappalyzer is an integral part of our sales process, enabling us to
+            optimise lead segmentation at scale. It's a total game changer for our organisation."
+                        </p>
+                        <p class="font-semibold text-gray-600">Roman Schweiger</p>
+                        <p class="text-sm text-gray-600">Head of Business Development at Boomerank</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="https://i.pravatar.cc/150?img=5" alt="Rick Viscomi" class="w-16 h-16 rounded-full shadow-lg">
+                    <div>
+                        <p class="italic mb-4 text-gray-600">
+                            "Wappalyzer has been such a useful part of the HTTP Archive dataset. It's
             enabled us to slice the data in new ways and discover more interesting insights about the state of the web."
-          </p>
-          <p class="font-semibold text-gray-600">Rick Viscomi</p>
-          <p class="text-sm text-gray-600">Senior DevRel Engineer at Google</p>
+                        </p>
+                        <p class="font-semibold text-gray-600">Rick Viscomi</p>
+                        <p class="text-sm text-gray-600">Senior DevRel Engineer at Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="https://i.pravatar.cc/150?img=6" alt="Rabin Nuchtabek" class="w-16 h-16 rounded-full shadow-lg">
+                    <div>
+                        <p class="italic mb-4 text-gray-600">
+                            "Wappalyzer is helping our sales teams to understand prospects better and
+            faster by having a clear view on their tech stack."
+                        </p>
+                        <p class="font-semibold text-gray-600">Rabin Nuchtabek</p>
+                        <p class="text-sm text-gray-600">Chief Growth Engineer at Skedify</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="border rounded-lg p-6">
-      <div class="flex items-start space-x-4">
-        <img src="https://i.pravatar.cc/150?img=6" alt="Rabin Nuchtabek" class="w-16 h-16 rounded-full shadow-lg">
         <div>
-          <p class="italic mb-4 text-gray-600">"Wappalyzer is helping our sales teams to understand prospects better and
-            faster by having a clear view on their tech stack."</p>
-          <p class="font-semibold text-gray-600">Rabin Nuchtabek</p>
-          <p class="text-sm text-gray-600">Chief Growth Engineer at Skedify</p>
+            <img src="wpa.png" alt="certificate" class="m-auto mb-10">
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <img src="wpa.png" alt="certificate" class="m-auto mb-10">
-  </div>
-
-  <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
-
-  <h1 class="text-center mt-12 text-xl text-gray-600">Subscribe to receive occasional product updates.</h1>
-  <div class="flex justify-center items-center mt-6 mb-10 gap-2">
-    <input type="email" placeholder="info@example.com"
-      class="w-64 md:w-96 h-11 px-4 py-2 border border-gray-500 rounded-md focus:ring-1 focus:ring-purple-600" />
-    <button
-      class="fas fa-envelope bg-purple-200 hover:bg-purple-300 text-purple-900 font-semibold p-[15px] rounded-md shadow">
-      Subscribe
-    </button>
-  </div>
-
-  <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
-
-  <footer class="bg-white py-12">
-    <div class="container mx-auto px-4 w-full">
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center md:justify-items-start">
-        <div>
-          <h3 class="font-bold text-lg mb-4">Products</h3>
-          <ul class="text-sm">
-            <li class="rounded-md p-2 block hover:bg-gray-100">Technology lookup</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Lead lists</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Email verification</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Keyword search</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Website alerts</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Apps</a></li>
-          </ul>
+        <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
+        <h1 class="text-center mt-12 text-xl text-gray-600">Subscribe to receive occasional product updates.</h1>
+        <div class="flex justify-center items-center mt-6 mb-10 gap-2">
+            <input type="email" placeholder="info@example.com" class="w-64 md:w-96 h-11 px-4 py-2 border border-gray-500 rounded-md focus:ring-1 focus:ring-purple-600">
+            <button class="fas fa-envelope bg-purple-200 hover:bg-purple-300 text-purple-900 font-semibold p-[15px] rounded-md shadow">
+                Subscribe
+            </button>
         </div>
-
-        <div>
-          <h3 class="font-bold text-lg mb-4">Use cases</h3>
-          <ul class="text-sm">
-            <li class="rounded-md p-2 block hover:bg-gray-100">Lead generation</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Market research</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Competitor analysis</a>
+        <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
+        <footer class="bg-white py-12">
+            <div class="container mx-auto px-4 w-full">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center md:justify-items-start">
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">Products</h3>
+                        <ul class="text-sm">
+                            <li class="rounded-md p-2 block hover:bg-gray-100">Technology lookup
+                            </a>
+                        </li>
+                        <li class="rounded-md p-2 block hover:bg-gray-100">Lead lists
+                        </a>
+                    </li>
+                    <li class="rounded-md p-2 block hover:bg-gray-100">Email verification
+                    </a>
+                </li>
+                <li class="rounded-md p-2 block hover:bg-gray-100">Keyword search
+                </a>
             </li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Data enrichment</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Security recon</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="font-bold text-lg mb-4">Pricing</h3>
-          <ul class="text-sm">
-            <li class="rounded-md p-2 block hover:bg-gray-100">Pricing</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="font-bold text-lg mb-4">Resources</h3>
-          <ul class="space-y-2 text-sm">
-            <li class="rounded-md p-2 block hover:bg-gray-100">Technologies</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Articles</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">FAQs</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Documentation</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="font-bold text-lg mb-4">Company</h3>
-          <ul class=" text-sm">
-            <li class="rounded-md p-2 block hover:bg-gray-100">About us</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Logos</a></li>
-            <li class="rounded-md p-2 block hover:bg-gray-100">Contact us</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
-
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div class="flex mt-5 gap-2">
+            <li class="rounded-md p-2 block hover:bg-gray-100">Website alerts
+            </a>
+        </li>
+        <li class="rounded-md p-2 block hover:bg-gray-100">Apps
+        </a>
+    </li>
+</ul>
+</div>
+<div>
+    <h3 class="font-bold text-lg mb-4">Use cases</h3>
+    <ul class="text-sm">
+        <li class="rounded-md p-2 block hover:bg-gray-100">Lead generation
+        </a>
+    </li>
+    <li class="rounded-md p-2 block hover:bg-gray-100">Market research
+    </a>
+</li>
+<li class="rounded-md p-2 block hover:bg-gray-100">Competitor analysis
+</a>
+</li>
+<li class="rounded-md p-2 block hover:bg-gray-100">Data enrichment
+</a>
+</li>
+<li class="rounded-md p-2 block hover:bg-gray-100">Security recon
+</a>
+</li>
+</ul>
+</div>
+<div>
+    <h3 class="font-bold text-lg mb-4">Pricing</h3>
+    <ul class="text-sm">
+        <li class="rounded-md p-2 block hover:bg-gray-100">Pricing
+        </a>
+    </li>
+</ul>
+</div>
+<div>
+    <h3 class="font-bold text-lg mb-4">Resources</h3>
+    <ul class="space-y-2 text-sm">
+        <li class="rounded-md p-2 block hover:bg-gray-100">Technologies
+        </a>
+    </li>
+    <li class="rounded-md p-2 block hover:bg-gray-100">Articles
+    </a>
+</li>
+<li class="rounded-md p-2 block hover:bg-gray-100">FAQs
+</a>
+</li>
+<li class="rounded-md p-2 block hover:bg-gray-100">Documentation
+</a>
+</li>
+</ul>
+</div>
+<div>
+    <h3 class="font-bold text-lg mb-4">Company</h3>
+    <ul class=" text-sm">
+        <li class="rounded-md p-2 block hover:bg-gray-100">About us
+        </a>
+    </li>
+    <li class="rounded-md p-2 block hover:bg-gray-100">Logos
+    </a>
+</li>
+<li class="rounded-md p-2 block hover:bg-gray-100">Contact us
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
+<div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="flex mt-5 gap-2">
         <img src="https://cdn.worldvectorlogo.com/logos/wappalyzer.svg" alt="Wappalyzer" class="h-8 mb-0">
         <h1 class="text-purple-950 font-black text-xl">Wappalyzer</h1>
-      </div>
-
-      <div class="flex flex-col md:flex-row justify-center items-center gap-3">
+    </div>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-3">
         <div class="flex items-center gap-2 hover:bg-gray-100 w-fit p-2 rounded-md">
-          <div class="h-3 w-3 rounded-full bg-green-500"></div>
-          <p class="font-sans text-green-500 text-xs">All systems operational</p>
+            <div class="h-3 w-3 rounded-full bg-green-500"></div>
+            <p class="font-sans text-green-500 text-xs">All systems operational</p>
         </div>
-
         <div class="font-sans text-xs hover:bg-gray-100 text-gray-500 w-fit p-2 rounded-md">Terms of services</div>
         <div class="font-sans text-xs hover:bg-gray-100 text-gray-500 w-fit p-2 rounded-md">Privacy policy</div>
-
         <div>
-          <i class="fab fa-facebook text-gray-500 p-2 text-sm rounded-full hover:bg-gray-100"></i>
-          <i class="fab fa-instagram text-gray-500 p-2 text-sm rounded-full hover:bg-gray-100"></i>
-          <i class="fab fa-twitter text-gray-500 p-2 text-sm rounded-full hover:bg-gray-100"></i>
-          <i class="fab fa-linkedin text-gray-500 p-2 text-sm rounded-full hover:bg-gray-100"></i>
+            <i class="fab fa-facebook text-gray-500 p-2 text-sm rounded-full hover:bg-gray-100"></i>
+            <i class="fab fa-instagram text-gray-500 p-2 text-sm rounded-full hover:bg-gray-100"></i>
+            <i class="fab fa-twitter text-gray-500 p-2 text-sm rounded-full hover:bg-gray-100"></i>
+            <i class="fab fa-linkedin text-gray-500 p-2 text-sm rounded-full hover:bg-gray-100"></i>
         </div>
-      </div>
     </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
-
 </html>

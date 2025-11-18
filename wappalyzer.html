@@ -16,10 +16,28 @@
 </head>
 
 <body>
-    <div class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex flex-col sm:flex-row gap-2">
-        <h1 class="font-bold text-lg">Caveat:</h1>
-        <p class="mt-1 text-sm">This is a student's project and not an attempt to clone the existing webpage.</p>
+    <div>
+        <div id="caveat"
+            class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex items-center justify-between">
+            <div class="flex flex-col sm:flex-row gap-2">
+                <h1 class="font-bold text-lg">Caveat:</h1>
+                <p class="mt-1 text-sm">This is a student's project and not an
+                    attempt to clone the existing webpage.
+                </p>
+            </div>
+            <div>
+                <span id="hide" class="fa fa-x hover:bg-gray-100 p-4 rounded-full"></span>
+            </div>
+        </div>
+        <script>
+            let hide = document.getElementById("caveat")
+            let btn = document.getElementById("hide")
+            btn.addEventListener("click", () => {
+                hide.style.display = "none"
+            })
+        </script>
     </div>
+    
     <ul class="flex gap-4 ml-20">
         <li class=" hover:text-blue-500 hover:underline">
             <a href="index.html">Project 1</a>
@@ -35,6 +53,7 @@
         </li>
         <li class=" hover:text-blue-500 hover:underline"><a href="whogohost.html">Project 5</a></li>
     </ul>
+
     <nav class="border-gray-200 pick pick">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3">
@@ -118,6 +137,7 @@
             </div>
         </div>
     </nav>
+
     <section class="pick flex flex-col justify-center items-center text-center py-20 px-4">
         <h1 class="text-4xl font-bold text-white mb-6">Identify technologies on websites</h1>
         <p class="text-white max-w-2xl mb-8">
@@ -135,8 +155,11 @@
             </div>
         </div>
     </section>
+
     <h1 class="text-3xl text-gray-600 text-center mt-10">Empower your sales and marketing teams</h1>
+
     <div class="mt-10">
+
         <div class="flex md:flex-row flex-col justify-center items-center">
             <div class="flex mt-10 px-4 gap-5">
                 <div class="flex flex-col ml-2 w-44">
@@ -238,6 +261,7 @@
             </div>
         </div>
     </div>
+
     <section class="w-full px-6 py-12 md:px-16 lg:px-24">
         <div class="grid md:grid-cols-2 gap-10 items-center justify-between">
             <div>
@@ -289,7 +313,9 @@
             </div>
         </div>
     </section>
+
     <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
+
     <section class="pb-12">
         <div class="container mx-auto px-4">
             <div class="md:flex md:items-center">
@@ -348,7 +374,9 @@
             </div>
         </div>
     </section>
+
     <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
+
     <section class="py-14">
         <div class="container mx-auto px-4">
             <div class="md:flex md:items-center">
@@ -393,7 +421,9 @@
             </div>
         </div>
     </section>
+
     <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
+
     <section class="py-16">
         <div class="container mx-auto px-4">
             <div class="md:flex md:items-center">
@@ -446,7 +476,9 @@
             </div>
         </div>
     </section>
+
     <div class="h-0.5 w-[95%] m-auto bg-gray-200"></div>
+
     <section class="py-14">
         <div class="container mx-auto px-4">
             <div class="md:flex md:items-center">
@@ -503,7 +535,9 @@
             </div>
         </div>
     </section>
+
     <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
+
     <div class="p-8">
         <h1 class="text-3xl text-gray-800 font-sans mb-2">Apps</h1>
         <p class="text-gray-600 font-sans mb-8">Wappalyzer works with the tools you use every day.</p>
@@ -593,11 +627,14 @@
             <p class="text-gray-500 font-sans">Wappalyzer in your pocket.</p>
         </div>
     </div>
+
     <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
+
     <h1 class="uppercase text-gray-600 text-center mt-[60px] font-mono tracking-wider">
         Wappalyzer is trusted by thousands
         of professionals world-wide
     </h1>
+
     <div class="flex justify-center items-center mt-10 mb-10 gap-10 flex-wrap">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1920px-Google_2015_logo.svg.png"
             alt="Google" class="h-5 grayscale">
@@ -624,6 +661,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Adobe_logo_and_wordmark_%282017%29.svg/500px-Adobe_logo_and_wordmark_%282017%29.svg.png"
             alt="Adobe" class="h-5 grayscale">
     </div>
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
         <div class="border rounded-lg p-6">
             <div class="flex items-start space-x-4">
@@ -709,20 +747,31 @@
             </div>
         </div>
     </div>
+
     <div>
         <img src="wpa.png" alt="certificate" class="m-auto mb-10">
     </div>
+
     <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
-    <h1 class="text-center mt-12 text-xl text-gray-600">Subscribe to receive occasional product updates.</h1>
+
+    <h1 class="text-center mt-12 text-xl text-gray-600">Subscribe to receive occasional product updates.
+
+    </h1>
+    
     <div class="flex justify-center items-center mt-6 mb-10 gap-2">
+
         <input type="email" placeholder="info@example.com"
-            class="w-64 md:w-96 h-11 px-4 py-2 border border-gray-500 rounded-md focus:ring-1 focus:ring-purple-600">
+            class="w-64 md:w-96 h-11 px-4 py-2 border border-gray-500 rounded-md focus:ring-1 focus:ring-purple-600"
+        >
+        
         <button
             class="fas fa-envelope bg-purple-200 hover:bg-purple-300 text-purple-900 font-semibold p-[15px] rounded-md shadow">
             Subscribe
         </button>
     </div>
+
     <div class="h-0.5 w-[100%] m-auto bg-gray-200"></div>
+
     <footer class="bg-white py-12">
         <div class="container mx-auto px-4 w-full">
             <div
@@ -834,6 +883,7 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 

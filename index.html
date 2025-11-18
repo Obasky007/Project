@@ -22,11 +22,28 @@
 </head>
 
 <body>
-    <div class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex flex-col sm:flex-row gap-2">
-        <h1 class="font-bold text-lg">Caveat:</h1>
-        <p class="mt-1 text-sm">This is a student's project and not an
-            attempt to clone the existing webpage.</p>
+    <div>
+        <div id="caveat"
+            class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex items-center justify-between">
+            <div class="flex flex-col sm:flex-row gap-2">
+                <h1 class="font-bold text-lg">Caveat:</h1>
+                <p class="mt-1 text-sm">This is a student's project and not an
+                    attempt to clone the existing webpage.
+                </p>
+            </div>
+            <div>
+                <span id="hide" class="fa fa-x hover:bg-gray-100 p-4 rounded-full"></span>
+            </div>
+        </div>
+        <script>
+            let hide = document.getElementById("caveat")
+            let btn = document.getElementById("hide")
+            btn.addEventListener("click", () => {
+                hide.style.display = "none"
+            })
+        </script>
     </div>
+
     <ul class="flex gap-4 ml-20">
         <li class=" hover:text-blue-500 hover:underline"><a href="index.html">Project 1</a></li>
         <li class=" hover:text-blue-500 hover:underline"><a href="wappalyzer.html">Project 2</a></li>
@@ -34,6 +51,7 @@
         <li class=" hover:text-blue-500 hover:underline"><a href="quicken.html">Project 4</a></li>
         <li class=" hover:text-blue-500 hover:underline"><a href="whogohost.html">Project 5</a></li>
     </ul>
+
     <div>
         <div class="bg-green-400 h-3 mb-4"></div>
         <div class="flex flex-col lg:flex-row justify-center items-center lg:gap-20">
@@ -79,13 +97,16 @@
             </div>
         </div>
     </div>
+
     <div class="bg-green-400 h-0.5 mt-10 mb-5"></div>
+
     <div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-10 mb-7 text-center">
         <div class="font-normal text-xs mb-2 md:mb-0">Company Registration
             No: 722728</div>
         <div class="font-normal text-xs">Copyright © 2025 Smile
             Communications Nigeria Ltd.</div>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="tailwind.js"></script>
 </body>

@@ -12,10 +12,28 @@
 </head>
 
 <body>
-    <div class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex flex-col sm:flex-row gap-2">
-        <h1 class="font-bold text-lg">Caveat:</h1>
-        <p class="mt-1 text-sm">This is a student's project and not an attempt to clone the existing webpage.</p>
+    <div>
+        <div id="caveat"
+            class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex items-center justify-between">
+            <div class="flex flex-col sm:flex-row gap-2">
+                <h1 class="font-bold text-lg">Caveat:</h1>
+                <p class="mt-1 text-sm">This is a student's project and not an
+                    attempt to clone the existing webpage.
+                </p>
+            </div>
+            <div>
+                <span id="hide" class="fa fa-x hover:bg-gray-100 p-4 rounded-full"></span>
+            </div>
+        </div>
+        <script>
+            let hide = document.getElementById("caveat")
+            let btn = document.getElementById("hide")
+            btn.addEventListener("click", () => {
+                hide.style.display = "none"
+            })
+        </script>
     </div>
+
     <ul class="flex gap-4 ml-20">
         <li class=" hover:text-blue-500 hover:underline"><a href="index.html">Project 1</a></li>
         <li class=" hover:text-blue-500 hover:underline"><a href="wappalyzer.html">Project 2</a></li>
@@ -23,6 +41,7 @@
         <li class=" hover:text-blue-500 hover:underline"><a href="quicken.html">Project 4</a></li>
         <li class=" hover:text-blue-500 hover:underline"><a href="whogohost.html">Project 5</a></li>
     </ul>
+
     <nav class="sticky top-0 bg-white border-b">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
             <div>
@@ -47,6 +66,7 @@
             </div>
         </div>
     </nav>
+
     <section class="text-center mt-16">
         <h1 class="text-gray-900 text-4xl md:text-6xl font-bold">GET INFORMED</h1>
         <h1 class="text-gray-900 text-4xl md:text-6xl font-bold mt-2">GET INSPIRED</h1>
@@ -55,6 +75,7 @@
         <button class="bg-red-500 text-white py-3 px-8 rounded-md mt-8 font-bold text-lg md:w-auto w-60">Sign
             up</button>
     </section>
+
     <div class="flex justify-center gap-6 md:gap-10 text-gray-600 mt-20 text-sm font-medium flex-wrap">
         <p class="font-bold text-black">NEWS</p>
         <p class="hover:font-bold hover:text-black">ENTERTAINMENT</p>
@@ -66,6 +87,7 @@
     </div>
 
     <div class="border-t border-gray-300 mt-6 mb-5 max-w-7xl mx-auto"></div>
+    
     <div class="flex flex-col gap-6">
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl w-full mx-auto px-4">
             <div class="bg-white rounded-xl shadow overflow-hidden">
@@ -388,9 +410,11 @@
             </div>
         </div>
     </div>
+
     <div class="flex justify-center mt-8 mb-4">
         <button class="bg-red-500 rounded px-5 py-3 text-sm font-medium text-white">Read more</button>
     </div>
+
     <footer class="mt-12 py-8 border-gray-300 mb-14">
         <div class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-sm text-gray-600">
             <a href="" class="underline hover:text-black">Log In</a>
@@ -409,6 +433,7 @@
             &copy; 2025 Flipboard
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 

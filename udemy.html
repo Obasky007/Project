@@ -10,11 +10,28 @@
 </head>
 
 <body>
-    <div class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex flex-col sm:flex-row gap-2">
-        <h1 class="font-bold text-lg">Caveat:</h1>
-        <p class="mt-1 text-sm">This is a student's project and not an attempt to
-            clone the existing webpage.</p>
+    <div>
+        <div id="caveat"
+            class="rounded-xl pl-3 my-3 border border-red-500 bg-red-100 text-red-700 flex items-center justify-between">
+            <div class="flex flex-col sm:flex-row gap-2">
+                <h1 class="font-bold text-lg">Caveat:</h1>
+                <p class="mt-1 text-sm">This is a student's project and not an
+                    attempt to clone the existing webpage.
+                </p>
+            </div>
+            <div>
+                <span id="hide" class="fa fa-x hover:bg-gray-100 p-4 rounded-s-xl"></span>
+            </div>
+        </div>
+        <script>
+            let hide = document.getElementById("caveat")
+            let btn = document.getElementById("hide")
+            btn.addEventListener("click", () => {
+                hide.classList.add("hidden")
+            })
+        </script>
     </div>
+
     <ul class="flex gap-4 ml-20">
         <li class=" hover:text-blue-500 hover:underline"><a href="index.html">Project 1</a></li>
         <li class=" hover:text-blue-500 hover:underline"><a href="wappalyzer.html">Project 2</a></li>
@@ -22,75 +39,47 @@
         <li class=" hover:text-blue-500 hover:underline"><a href="quicken.html">Project 4</a></li>
         <li class=" hover:text-blue-500 hover:underline"><a href="whogohost.html">Project 5</a></li>
     </ul>
+
     <nav class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-
                 <div class="flex items-center space-x-4">
-                    <button id="menu-btn" class="md:hidden text-gray-600 text-2xl">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                    <img src="download-removebg-preview.png" alt="Logo" class="h-8">
+                    <button id="menu-btn" class="md:hidden text-gray-600 text-2xl"><i class="fa-solid fa-bars"></i></button>
+                    <img src="download-removebg-preview.png" alt="Logo" class="h-12 w-16">
                 </div>
                 <a href="" class="hidden md:block ml-4 text-sm text-gray-700 hover:text-purple-600">Explore</a>
-
                 <div class="flex-1 max-w-xl mx-4 hidden md:block">
                     <div class="relative">
-                        <input type="text" placeholder="Search for anything"
-                            class="w-full pl-10 pr-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
-                        <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
+                        <input type="text" placeholder="Search for anything" class="w-full pl-10 pr-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                        <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400"> <i class="fa-solid fa-magnifying-glass"></i> </span>
                     </div>
                 </div>
-
                 <div class="flex items-center space-x-6">
                     <div class="hidden md:flex items-center space-x-6 text-sm text-gray-700">
-                        <a href="" class="hover:text-purple-600">Plans & Pricing</a>
-                        <a href="" class="hover:text-purple-600">Udemy Business</a>
-                        <a href="" class="hover:text-purple-600">Teach on Udemy</a>
-
-                        <a href="cart.html" class="hover:text-purple-600">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
-
-                        <a href=""
-                            class="px-4 py-1 border border-gray-800 text-sm font-semibold rounded hover:bg-gray-100">Log
-                            in</a>
-                        <a href=""
-                            class="px-4 py-1 bg-purple-600 text-white text-sm font-semibold rounded hover:bg-purple-700">Sign
-                            up</a>
-
-                        <a href="" class="px-3 py-1 border border-gray-300 rounded">
-                            <i class="fa-solid fa-globe"></i>
-                        </a>
+                        <a class="hover:text-purple-600">Plans & Pricing</a>
+                        <a class="hover:text-purple-600">Udemy Business</a>
+                        <a class="hover:text-purple-600">Teach on Udemy</a>
+                        <a class="hover:text-purple-600"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="px-4 py-1 border border-gray-800 text-sm font-semibold rounded hover:bg-gray-100">Log in</a>
+                        <a class="px-4 py-1 bg-purple-600 text-white text-sm font-semibold rounded hover:bg-purple-700">Sign up</a>
+                        <a class="px-3 py-1 border border-gray-300 rounded"><i class="fa-solid fa-globe"></i></a>
                     </div>
-
                     <div class="md:hidden flex items-center space-x-4">
                         <button><i class="fa-solid fa-magnifying-glass text-xl text-gray-600"></i></button>
-                        <a href=""><i class="fa-solid fa-cart-shopping text-xl text-gray-600"></i></a>
+                        <a><i class="fa-solid fa-cart-shopping text-xl text-gray-600"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-4 py-2 space-y-2">
-            <a href="" class="block text-gray-700 hover:text-purple-600">Explore</a>
-            <a href="" class="block text-gray-700 hover:text-purple-600">Plans & Pricing</a>
-            <a href="" class="block text-gray-700 hover:text-purple-600">Udemy Business</a>
-            <a href="" class="block text-gray-700 hover:text-purple-600">Teach on Udemy</a>
-            <a href="cart.html" class="block text-gray-700 hover:text-purple-600">
-                <i class="fa-solid fa-cart-shopping mr-2"></i> Cart
-            </a>
-            <a href=""
-                class="block px-4 py-2 border border-gray-800 text-sm font-semibold rounded hover:bg-gray-100">Log
-                in</a>
-            <a href=""
-                class="block px-4 py-2 bg-purple-600 text-white text-sm font-semibold rounded hover:bg-purple-700">Sign
-                up</a>
-            <a href="" class="block text-gray-700 hover:text-purple-600">
-                <i class="fa-solid fa-globe mr-2"></i> Language
-            </a>
+            <a class="block text-gray-700 hover:text-purple-600">Explore</a>
+            <a class="block text-gray-700 hover:text-purple-600">Plans & Pricing</a>
+            <a class="block text-gray-700 hover:text-purple-600">Udemy Business</a>
+            <a class="block text-gray-700 hover:text-purple-600">Teach on Udemy</a>
+            <a class="block text-gray-700 hover:text-purple-600"><i class="fa-solid fa-cart-shopping mr-2"></i> Cart</a>
+            <a class="block px-4 py-2 border border-gray-800 text-sm font-semibold rounded hover:bg-gray-100">Login</a>
+            <a class="block px-4 py-2 bg-purple-600 text-white text-sm font-semibold rounded hover:bg-purple-700">Sign up</a>
+            <a class="block text-gray-700 hover:text-purple-600"><i class="fa-solid fa-globe mr-2"></i> Language</a>
         </div>
     </nav>
 

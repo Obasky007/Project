@@ -24,7 +24,7 @@
 <body>
     <div>
         <div id="caveat"
-            class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex items-center justify-between">
+            class="rounded-xl pl-3 my-3 border border-red-500 bg-red-100 text-red-700 flex items-center justify-between">
             <div class="flex flex-col sm:flex-row gap-2">
                 <h1 class="font-bold text-lg">Caveat:</h1>
                 <p class="mt-1 text-sm">This is a student's project and not an
@@ -32,14 +32,14 @@
                 </p>
             </div>
             <div>
-                <span id="hide" class="fa fa-x hover:bg-gray-100 p-4 rounded-full"></span>
+                <span id="hide" class="fa fa-x hover:bg-gray-100 p-4 rounded-s-xl"></span>
             </div>
         </div>
         <script>
             let hide = document.getElementById("caveat")
             let btn = document.getElementById("hide")
             btn.addEventListener("click", () => {
-                hide.style.display = "none"
+                hide.classList.add("hidden")
             })
         </script>
     </div>

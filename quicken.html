@@ -68,12 +68,12 @@
     </div>
   </nav>
 
-  <video src="video.mp4" autoplay loop muted playsinline class="w-full h-[300px] object-cover"></video>
+  <video src="video.mp4" autoplay loop muted playsinline id="video" class="w-full h-[300px] object-cover"></video>
 
   <div class="flex flex-wrap justify-center gap-3 lg:justify-between relative bottom-28">
     <div
       class="bg-[#f0f5fa] flex flex-col w-[90%] sm:w-[400px] lg:w-[430px] rounded-[15px] m-auto border-2 border-gray-300 hover:relative hover:bottom-10 transition-all">
-      <div class="bg-[#b9edfc] rounded-t-[15px] h-[370px] p-4">
+      <div class="bg-[#b9edfc] rounded-t-[15px] h-[370px] p-4" id="card1">
         <p class="font-bold text-sm pb-3">Finances for individuals <i class="fa fa-arrow-right"></i></p>
         <h3 class="text-3xl pb-2">The gold standard of personal finance
           apps</h3>
@@ -397,7 +397,6 @@
   </div>
 
   <div class="border-l mb-10 bg-gray-300 w-[90%] h-[0.1px] m-auto"></div>
-
   <footer>
     <div class="flex justify-center gap-[100px] md:flex-row flex-col ml-4 mb-4">
       <div class="img md:m-2 m-auto">
@@ -461,6 +460,11 @@
     toggleBtn.addEventListener('click', () => {
       navMenu.classList.toggle('hidden');
     });
+    const card1 = document.getElementById('card1');
+    const video = document.getElementById('video');
+    card1.addEventListener("mouseenter", () =>{
+      video.outerHTML = `  <img src="High_angle_view_of_a_brokenhearted_man_at_a_lonely_crossroads_in_a_dark_decayi_20250901160431_04.png" class="w-full h-[300px] object-cover" alt="">`
+    })
   </script>
 </body>
 

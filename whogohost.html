@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>No.1 web hosting company in Nigeria</title>
-    <link rel="icon" type="image/x-icon" href="">
+    <title>Best Web Hosting Company in Nigeria</title>
+    <link rel="icon" type="image/svg+xml" href="https://www.go54.com/logos/logo_6.svg">
     <script src="tailwind.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <div class="p-4 rounded-md border border-red-500 bg-red-100 text-red-700 flex flex-col sm:flex-row gap-2">
         <h1 class="font-bold text-lg">Caveat:</h1>
         <p class="mt-1 text-sm">This is a student's project and not an
-            attempt to clone the existing webpage.</p>
-    </div>
+            attempt to clone the existing webpage.
+        </p>
+    </div> 
+
     <ul class="flex gap-4 ml-20">
         <li class=" hover:text-blue-500 hover:underline"><a href="index.html">Project 1</a></li>
         <li class=" hover:text-blue-500 hover:underline"><a href="wappalyzer.html">Project 2</a></li>
@@ -23,6 +25,590 @@
         <li class=" hover:text-blue-500 hover:underline"><a href="quicken.html">Project 4</a></li>
         <li class=" hover:text-blue-500 hover:underline"><a href="whogohost.html">Project 5</a></li>
     </ul>
+
+    <header class="w-full">
+        <nav class="w-full">
+
+            <div class="flex justify-between items-center px-5 py-3 w-full">
+                <div class="flex items-center gap-3">
+                    <img src="https://images.seeklogo.com/logo-png/48/1/whogohost-logo-png_seeklogo-482514.png"
+                        width="130" class="object-contain" />
+                    <div class="w-[1.2px] h-7 bg-gray-400"></div>
+                    <img src="https://go54.com/blog/wp-content/uploads/2023/11/full-logo-1.png" width="110"
+                        class="object-contain" />
+                </div>
+
+                <button id="menu-btn"
+                    class="md:hidden text-gray-700 text-3xl px-3 py-2 rounded-lg hover:bg-gray-200 transition">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <div class="hidden md:flex items-center gap-4">
+                    <p class="text-gray-500">Help</p>
+                    <div class="w-[1px] h-6 bg-gray-400"></div>
+                    <button
+                        class="text-gray-500 font-bold border border-blue-500 rounded-3xl px-4 py-1 hover:text-white hover:bg-blue-500 transition">Login
+                    </button>
+                    <span class="fa fa-cart-shopping text-gray-500"></span>
+                    <p class="text-gray-500">NGN</p>
+                    <span class="fa fa-chevron-down text-gray-500"></span>
+                </div>
+            </div>
+
+            <div class="hidden md:block w-[95%] h-[1px] mx-auto bg-gray-300"></div>
+
+            <div id="mobile-overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+            <div id="mobile-menu"
+                class="fixed inset-0 bg-white hidden flex flex-col px-6 py-6 text-gray-700 text-lg z-50 overflow-y-auto">
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center gap-3">
+                        <img src="https://images.seeklogo.com/logo-png/48/1/whogohost-logo-png_seeklogo-482514.png"
+                            width="110" />
+                        <div class="w-[1.2px] h-7 bg-gray-400"></div>
+                        <img src="https://go54.com/blog/wp-content/uploads/2023/11/full-logo-1.png" width="90" />
+                    </div>
+
+                    <button id="close-btn" class="text-3xl px-3 py-2 rounded-lg hover:bg-gray-200 transition">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <a class="py-3 border-b border-gray-200 block">Domains</a>
+                    <a class="py-3 border-b border-gray-200 block">Email</a>
+                    <a class="py-3 border-b border-gray-200 block">Website</a>
+                    <a class="py-3 border-b border-gray-200 block">Hosting</a>
+                    <a class="py-3 border-b border-gray-200 block">Server</a>
+                    <a class="py-3 border-b border-gray-200 block">Resources</a>
+                </div>
+
+                <div class="mt-6 flex flex-col gap-4">
+                    <button
+                        class="text-gray-500 font-bold border border-blue-500 rounded-3xl px-4 py-2 hover:text-white hover:bg-blue-500 transition">Login
+                    </button>
+                    <div class="flex items-center gap-4">
+                        <span class="fa fa-cart-shopping"></span>
+                        <p>NGN</p>
+                        <span class="fa fa-chevron-down"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden md:flex justify-between items-center px-5 py-3 text-sm md:text-base">
+                <div class="flex gap-6">
+                    <a class="text-gray-500">Domains <span class="fa fa-chevron-down"></span></a>
+                    <a class="text-gray-500">Email <span class="fa fa-chevron-down"></span></a>
+                    <a class="text-gray-500">Website <span class="fa fa-chevron-down"></span></a>
+                    <a class="text-gray-500">Hosting <span class="fa fa-chevron-down"></span></a>
+                    <a class="text-gray-500">Server <span class="fa fa-chevron-down"></span></a>
+                </div>
+
+                <a class="text-gray-500">Resources</a>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const closeBtn = document.getElementById("close-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const overlay = document.getElementById("mobile-overlay");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("hidden");
+            overlay.classList.remove("hidden");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+            overlay.classList.add("hidden");
+        });
+
+        overlay.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+            overlay.classList.add("hidden");
+        });
+    </script>
+
+    <section class="bg-[#ebf5ff] mt-3 font-sans">
+        <h1
+            class="text-5xl font-bold md:w-[670px] w-[480px] m-auto text-center font-[cursive] text-gray-900 pt-[100px]">
+            Best Hosting
+            Provider in Nigeria - Reliable Domains & Web Hosting
+        </h1>
+        <p class="font-sans md:w-[670px] w-[480px] text-center text-gray-800 m-auto mt-5">Your perfect .name.ng domain
+            is just ₦500! Search, buy, and register a unique domain with WhoGoHost today. As
+            one of the
+            best domain and hosting providers in Nigeria, we make it easy to secure your online identity and get your
+            website online
+            fast.
+        </p>
+        <div class="ml-[50px] md:ml-[180px] mb-1 flex">
+            <input type="text" id="input" placeholder="  Find the perfect domain..."
+                class="md:px-5 mt-10 md:w-[670px] w-[450px] m-auto h-[55px] rounded-3xl placeholder:text-gray-700 placeholder:p-4 outline-none">
+            <button
+                class="h-12 rounded-3xl bg-[#0078c8] text-white md:px-4 px-8 font-bold relative md:right-[290px] md:bottom-[1px] top-11 right-[125px] hover:bg-blue-700"
+                id="search">Search
+                <span class="md:inline-block hidden">Domain</span>
+            </button>
+        </div>
+        <script>
+            let input = document.getElementById("input")
+            document.getElementById("search").addEventListener("click", () => {
+                if (input.value === '') {
+                    input.style.border = '1px dotted red'
+                }
+                else {
+                    input.value = ''
+                    input.style.border = 'transparent'
+                }
+            })
+        </script>
+        <div class="flex justify-center items-start m-auto mt-5 pb-[200px] gap-2">
+            <p class="text-gray-800">Already have a domain?</p>
+            <a class="underline">Transfer it to Whogohost</a>
+        </div>
+    </section>
+
+    <section
+        class="flex justify-center items-center flex-col md:flex-row md:gap-0 gap-10 md:mt-0 mt-[100px] rounded-2xl md:border w-[95%] m-auto md:relative bottom-[130px] bg-[#ffffff]">
+        <div
+            class="flex justify-center items-center flex-col gap-3 md:border-none border md:w-fit w-full md:rounded-none rounded-xl p-4">
+            <div class="flex justify-center items-center flex-col gap-3">
+                <h1 class="font-[cursive] font-bold text-2xl">Website Builder</h1>
+                <p class="text-gray-700 w-[270px] text-center text-sm">Create your website or online store in
+                    5 minutes. No coding required.
+                </p>
+            </div>
+            <div class="flex justify-center items-center flex-col gap-3">
+                <p class="text-gray-700 text-sm">From</p>
+                <p class="text-gray-900 font-bold text-2xl">#7,900.00</p>
+                <button
+                    class="text-[#0078c8] rounded-3xl border border-[#0078c8] font-bold py-1 px-4 hover:text-white hover:bg-[#0078c8] transition-all">Get
+                    Started
+                </button>
+            </div>
+        </div>
+        <div
+            class="flex justify-center items-center flex-col  gap-3 md:w-fit w-full md:rounded-none rounded-xl h-[240px] border p-4">
+            <div class="flex justify-center items-center flex-col gap-3">
+                <h1 class="font-[cursive] font-bold text-2xl">WordPress Hosting</h1>
+                <p class="text-gray-700 w-[270px] text-center text-sm">Powered by our reliable infrastructure and
+                    perfect for WordPress websites
+                </p>
+            </div>
+            <div class="flex justify-center items-center flex-col gap-3">
+                <p class="text-gray-700 text-sm">From</p>
+                <p class="text-gray-900 font-bold text-2xl">#4,500.00</p>
+                <button
+                    class="text-[#0078c8] rounded-3xl border border-[#0078c8] font-bold py-1 px-4 hover:text-white hover:bg-[#0078c8] transition-all">Get
+                    Started
+                </button>
+            </div>
+        </div>
+        <div
+            class="flex justify-center items-center flex-col  gap-3 md:w-fit w-full md:rounded-none rounded-xl  border h-[240px] p-4">
+            <div class="flex justify-center items-center flex-col gap-3">
+                <h1 class="font-[cursive] font-bold text-2xl">Email Hosting</h1>
+                <p class="text-gray-700 w-[270px] text-center text-sm">Get professional emails
+                    for your business
+                </p>
+            </div>
+            <div class="flex justify-center items-center flex-col gap-3">
+                <p class="text-gray-700 text-sm">From</p>
+                <p class="text-gray-900 font-bold text-2xl">#2,459.00</p>
+                <button
+                    class="text-[#0078c8] rounded-3xl border border-[#0078c8] font-bold py-1 px-4 hover:text-white hover:bg-[#0078c8] transition-all">Get
+                    Started
+                </button>
+            </div>
+        </div>
+        <div
+            class="flex justify-center items-center flex-col gap-3 md:border-none border md:w-fit w-full md:rounded-none rounded-xl p-4 md:mb-0 mb-[100px]">
+            <div class="flex justify-center items-center flex-col gap-3">
+                <h1 class="font-[cursive] font-bold text-2xl">VPS</h1>
+                <p class="text-gray-700 w-[270px] text-center text-sm">Fully customizable Linux
+                    VPS based on your needs.
+                </p>
+            </div>
+            <div class="flex justify-center items-center flex-col gap-3">
+                <p class="text-gray-700 text-sm">From</p>
+                <p class="text-gray-900 font-bold text-2xl">#14,280</p>
+                <button
+                    class="text-[#0078c8] rounded-3xl border border-[#0078c8] font-bold py-1 px-4 hover:text-white hover:bg-[#0078c8] transition-all">Get
+                    Started
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-center m-auto font-medium w-[490px] md:w-[430px]">
+            <h1 class="text-4xl md:w-[430px] w-[490px]  text-gray-900 mb-3">Why Choose Whogohost as Your Hosting
+                Provider?
+            </h1>
+            <p class="md:w-[430px] w-[480px]  text-gray-500 mb-16">Over the years, 40,000+ companies and institutions
+                have trusted us
+                to deliver excellent services.
+            </p>
+        </div>
+        <div>
+            <div class="flex flex-col md:flex-row">
+                <div class="flex justify-center items-center flex-col text-center md:w-[350px] w-[350px] m-auto mb-20">
+                    <div class="bg-[#ebf4fb] w-[80px] h-[80px] rounded-full flex justify-center items-center">
+                        <span class="fa fa-trophy text-[#0081d2] text-3xl"></span>
+                    </div>
+                    <h2 class="text-lg font-bold text-gray-700 mt-4 mb-2">West Africa's No. 1 Hosting Provider</h2>
+                    <p class="text-gray-500 mb-10">We are West Africa's largest and most popular web hosting provider,
+                        supporting businesses, enterprises and individuals
+                        for the past 12 years and counting.
+                    </p>
+                </div>
+                <div class="flex justify-center items-center flex-col text-center md:w-[350px] w-[350px] m-auto mb-20">
+                    <div class="bg-[#ebf4fb] w-[80px] h-[80px] rounded-full flex justify-center items-center">
+                        <span class="fa fa-shop text-[#0081d2] text-3xl"></span>
+                    </div>
+                    <h2 class="text-lg font-bold text-gray-700 mt-4 mb-2">Wide Range of Hosting and Domain Services</h2>
+                    <p class="text-gray-500 mb-10">With our growing number of offerings, we are your one-stop shop for
+                        anything you and your business needs to succeed
+                        online
+                    </p>
+                </div>
+                <div class="flex justify-center items-center flex-col text-center md:w-[350px] w-[350px] m-auto mb-20">
+                    <div class="bg-[#ebf4fb] w-[80px] h-[80px] rounded-full flex justify-center items-center">
+                        <span class="fa fa-circle-info text-[#0081d2] text-3xl"></span>
+                    </div>
+                    <h2 class="text-lg font-bold text-gray-700 mt-4 mb-2">24/7 <br> Customer Support</h2>
+                    <p class="text-gray-500 mb-10">Our 24/7 award-winning support team is available to handle any
+                        requests you may have. Whatever you may need, we are just
+                        a click away.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="flex justify-center items-center flex-col text-center md:w-[350px] w-[350px] m-auto mb-20">
+                    <div class="bg-[#ebf4fb] w-[80px] h-[80px] rounded-full flex justify-center items-center">
+                        <span class="fa fa-piggy-bank text-[#0081d2] text-3xl"></span>
+                    </div>
+                    <h2 class="text-lg font-bold text-gray-700 mt-4 mb-2">Affordability Solutions</h2>
+                    <p class="text-gray-500 mb-10">Enjoy competitive pricing on all our hosting and domain services,
+                        giving you excellent value without sacrificing
+                        performance, reliability, or security.
+                    </p>
+                </div>
+                <div class="flex justify-center items-center flex-col text-center md:w-[350px] w-[350px] m-auto mb-20">
+                    <div class="bg-[#ebf4fb] w-[80px] h-[80px] rounded-full flex justify-center items-center">
+                        <span class="fa fa-handshake text-[#0081d2] text-3xl"></span>
+                    </div>
+                    <h2 class="text-lg font-bold text-gray-700 mt-4 mb-2">Trusted and Reliable</h2>
+                    <p class="text-gray-500 mb-10">With WhoGoHost, you get consistent uptime, strong security, and a
+                        hosting provider you can rely on. Your websites and
+                        domains are in safe hands.
+                    </p>
+                </div>
+                <div class="flex justify-center items-center flex-col text-center md:w-[350px] w-[350px] m-auto mb-20">
+                    <div class="bg-[#ebf4fb] w-[80px] h-[80px] rounded-full flex justify-center items-center">
+                        <span class="fa fa-info text-[#0081d2] text-3xl"></span>
+                    </div>
+                    <h2 class="text-lg font-bold text-gray-700 mt-4 mb-2">Intuitive Interface</h2>
+                    <p class="text-gray-500 mb-10">Our platform, designed with the user in mind is simple. <br> Manage
+                        your domains and hosting effortlessly, even if you’re a
+                        beginner.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="font-medium mt-24">
+        <h1 class="text-center m-auto text-4xl md:w-[430px] w-[490px]  text-gray-900 mb-3">Our Customers Love Us!</h1>
+        <p class="text-center m-auto md:w-[650px] w-[480px] font-normal text-gray-500 mb-16">We're proud to help our
+            customers succeed online. From buying domains to managing web hosting in Nigeria, we
+            go the
+            extra mile to provide reliable, affordable, and easy-to-use solutions that meet every need — and then some.
+            Your success
+            is our top priority!
+        </p>
+    </section>
+
+    <section class="w-fit m-auto mt-24 mb-10 ml-11">
+        <div class="w-fit flex justify-center gap-10 bg-[#ebf5ff] md:p-4 p-3 rounded-xl">
+            <div class="mt-14">
+                <i class="fa-solid fa-quote-left text-blue-600 text-3xl w-28"></i>
+                <div class="md:ml-14 font-semibold text-left flex flex-col gap-10 m-auto">
+                    <h1 class="md:text-3xl text-2xl m-auto md:w-[600px] w-[300px]">Their customer relationship approach
+                        is commendable. The
+                        Whogohost team
+                        displayed a remarkable level
+                        of knowledge and
+                        expertise while addressing my concerns.
+                    </h1>
+                    <div>
+                        <p class="font-semibold font-sans text-2xl mt-10">Adamu Emenike Oluwathompson</p>
+                        <p class="font-light font-[cursive] text-2xl md:ml-12 ml-8 mt-2 md:mb-0 mb-4">Web Designer</p>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <img class="grayscale hover:grayscale-0 transition-all object-cover w-[440px] h-[470px] relative top-4 left-4 rounded-br-xl hidden md:block"
+                    src="https://whogohost.com/wp-content/themes/HAWHG/assets/images/sections/customers_love/dude.png"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+    <button
+        class="md:ml-[450px] ml-[70px] mb-[100px] bg-[#0078c8] px-6 py-3 text-white text-lg rounded-3xl cursor-default">Read
+        what our customers have to say
+    </button>
+
+    <section class="px-5 pt-[60px] pb-7 bg-[#fbfbfd] m-auto md:w-[1200px]">
+        <h1
+            class="font-medium text-3xl md:text-[40px] leading-tight md:leading-[50px] mb-12 text-gray-900 text-center font-sans max-w-2xl mx-auto">
+            Got more questions about our hosting services? We'd love to hear from you
+        </h1>
+
+        <div class="flex flex-col md:flex-row items-start gap-10 md: justify-center mx-auto mb-28">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto">
+                <div class="bg-white border-2 border-[#dfeef8] rounded-xl p-7 w-full max-w-[330px] mx-auto">
+                    <h3 class="font-medium mb-3">Help center</h3>
+                    <p class="text-gray-700 mb-5">
+                        Have an issue but like learning on your own? We have a dedicated team
+                        creating the best help articles for you.
+                    </p>
+                    <button
+                        class="border border-blue-700 px-8 py-3 rounded-3xl text-blue-700 hover:bg-blue-700 hover:text-white transition font-semibold">
+                        Fix it yourself
+                    </button>
+                </div>
+
+                <div class="bg-white border-2 border-[#dfeef8] rounded-xl p-7 w-full max-w-[330px] mx-auto">
+                    <h3 class="font-medium mb-3">Chat support</h3>
+                    <p class="text-gray-700 mb-5">
+                        We are always here to help you. 24/7 - 365 days a year.
+                    </p>
+                    <button
+                        class="border border-blue-700 px-8 py-3 rounded-3xl text-blue-700 hover:bg-blue-700 hover:text-white transition font-semibold">
+                        Start Chatting
+                    </button>
+                </div>
+
+                <div class="bg-white border-2 border-[#dfeef8] rounded-xl p-7 w-full max-w-[330px] mx-auto">
+                    <h3 class="font-medium mb-3">Email support</h3>
+                    <p class="text-gray-700 mb-5">
+                        Whatever your question, we will respond within 24 hours all year round.
+                    </p>
+                    <button
+                        class="border border-blue-700 px-8 py-3 rounded-3xl text-blue-700 hover:bg-blue-700 hover:text-white transition font-semibold">
+                        Open a ticket link
+                    </button>
+                </div>
+                <div class="flex items-center justify-center w-full max-w-[330px] mx-auto">
+                    <img src="https://whogohost.com/wp-content/themes/HAWHG/assets/images/sections/questions/who_gold.png"
+                        class="w-32 h-32 md:w-40 md:h-40 object-contain" alt="badge" />
+                </div>
+            </div>
+            <div class="mx-auto md:mx-0">
+                <img src="https://whogohost.com/wp-content/themes/HAWHG/assets/images/sections/questions/questions_girl.png"
+                    class="rounded-xl w-full max-w-[420px] h-auto md:h-[510px] object-cover" alt="support agent" />
+            </div>
+        </div>
+    </section>
+    
+    <section class="mt-20">
+        <h1
+            class="text-3xl md:text-[40px] leading-tight md:leading-[50px] mb-12 text-gray-900 text-center font-sans max-w-2xl mx-auto">
+            Frequently Asked Questions
+        </h1>
+
+        <div class="max-w-3xl mx-auto">
+            <!-- FAQ item -->
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    What is a domain name and why do I need one?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    Can I register a <span class="text-blue-700">.com.ng</span> domain from
+                    Nigeria?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    How much does a domain name cost in Nigeria?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    How long does it take to activate a domain after purchase?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    Can I manage my DNS settings on WhoGoHost?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    Can I transfer my domain to WhoGoHost?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    Will I get reminders before my domain expires?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    What happens if my domain expires?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    Can I use my domain for email?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    What if the domain I want is already taken?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    Can I buy multiple domains at once?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    Why should I choose a local domain provider in Nigeria?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-gray-300 py-5 cursor-pointer">
+                <h1 class="font-medium text-lg md:text-xl text-gray-700">
+                    Do I need a domain if I already have social media pages?
+                </h1>
+                <span class="fa fa-chevron-down text-xl text-gray-500"></span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#fbfbfd] pt-20 pb-10 mt-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-12">
+            <div>
+                <h3 class="font-semibold text-lg mb-4">Hosting</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li>Web Hosting</li>
+                    <li>Reseller Hosting</li>
+                    <li>Hosting Transfer</li>
+                    <li>Google Workspace</li>
+                    <li>Microsoft 365</li>
+                    <li>Website Builder</li>
+                    <li>Professional Email</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg mb-4">Domains</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li>Domain Registration</li>
+                    <li>Domain Transfer</li>
+                    <li>Domain Reseller</li>
+                    <li>WHO IS*</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg mb-4">Services</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li>SSL Certificates</li>
+                    <li>Jet Backup</li>
+
+                    <li class="flex items-center gap-2">
+                        CodeGuard
+                        <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-md">10% OFF</span>
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                        SiteLock
+                        <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-md">10% OFF</span>
+                    </li>
+
+                    <li>Domain Reseller API</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg mb-4">Company</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Announcements</li>
+                    <li>Terms of Service</li>
+                    <li>Our Blog</li>
+                    <li>Merger & Acquisition</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg mb-4">Support</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li>Client Login</li>
+                    <li>Knowledge Base</li>
+                    <li>Downloads</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-16 flex flex-col md:flex-row justify-between items-center gap-8">
+
+            <div class="flex items-center gap-6">
+                <img src="https://images.seeklogo.com/logo-png/48/1/whogohost-logo-png_seeklogo-482514.png" width="100" />
+                <img src="https://go54.com/blog/wp-content/uploads/2023/11/full-logo-1.png" width="110" />
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-blue-600 text-xl">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-blue-600 text-xl">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-blue-600 text-xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-blue-600 text-xl">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-blue-600 text-xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>

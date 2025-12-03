@@ -172,11 +172,12 @@
         </div>
     </div>
 
-    <div class="flex justify-center items-center my-10 px-3">
-        <div>
+    <div class="flex flex-col lg:flex-row justify-center items-center my-10 px-3 gap-6">
+        <div class="text-center lg:text-left max-w-lg">
             <h1 class="font-semibold text-3xl mb-3">Learn essential career and life skills</h1>
-            <p class="font-light text-gray-500 text-lg">Udemy helps you build in-demand skills fast and advance your
-                career in a changing job market.</p>
+            <p class="font-light text-gray-500 text-lg">
+                Udemy helps you build in-demand skills fast and advance your career in a changing job market.
+            </p>
         </div>
 
         <div class="flex items-center justify-center p-4">
@@ -196,6 +197,7 @@
                 </div>
             </div>
         </div>
+
         <div class="flex items-center justify-center p-4">
             <div class="w-[280px] h-[400px] rounded-3xl overflow-hidden bg-white flex flex-col"
                 style="flex:1; background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEjHjyziXdUySzAfJ7zXlAwiQJ9qQ4U8RtbA&s'); background-size:cover; background-position:center; background-repeat:no-repeat; padding:1rem;">
@@ -213,6 +215,7 @@
                 </div>
             </div>
         </div>
+
         <div class="flex items-center justify-center p-4">
             <div class="w-[280px] h-[400px] rounded-3xl overflow-hidden bg-white flex flex-col"
                 style="flex:1; background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3LOt8XeW4whKIkXKc6k3i9794c8y8xtBPvg&s'); background-size:cover; background-position:center; background-repeat:no-repeat; padding:1rem;">
@@ -233,49 +236,56 @@
 
     </div>
 
-    <div class="bg-[#202230] flex w-fit mx-5 px-5 py-7 mb-[100px] rounded-3xl justify-center">
-        <div class="flex flex-col">
-            <h1 class="text-white font-semibold text-3xl py-10">Reimagine your career in the AI era</h1>
-            <p class="font-normal text-gray-300 pb-5">Future-proof your skills with Personal Plan. Get access to a
-                variety of fresh content from real-world
+    <div
+        class="bg-[#202230] flex flex-col lg:flex-row w-full mx-auto px-6 py-12 lg:py-16 mb-[100px] rounded-3xl justify-between items-center gap-12 lg:gap-16 max-w-7xl">
+        <div class="flex flex-col max-w-xl text-center lg:text-left space-y-5 lg:space-y-6">
+            <h1 class="text-white font-semibold text-4xl lg:text-5xl leading-tight">Reimagine your career in the AI era
+            </h1>
+
+            <p class="font-normal text-gray-300 text-lg lg:text-xl">
+                Future-proof your skills with Personal Plan. Get access to a variety of fresh content from real-world
                 experts.
             </p>
-            <div>
-                <div class="flex">
-                    <div class="flex items-center gap-3 text-white px-4 py-2 rounded-lg w-fit mr-11">
-                        <div class="w-6 h-6 rounded-full flex items-center justify-center">
-                            <i class="fas fa-atom text-white text-xs"></i>
-                        </div>
-                        <span class="text-sm font-medium">Learn AI and more</span>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                <div class="flex items-center gap-3 text-white px-4 py-2 rounded-lg bg-[#2a2c42] w-fit mx-auto sm:mx-0">
+                    <div class="w-6 h-6 rounded-full flex items-center justify-center">
+                        <i class="fas fa-atom text-white text-xs"></i>
                     </div>
-                    <div class="flex items-center gap-3 text-white px-4 py-2 rounded-lg w-fit">
-                        <div class="w-6 h-6 rounded-full flex items-center justify-center">
-                            <i class="fas fa-trophy text-white text-xs"></i>
-                        </div>
-                        <span class="text-sm font-medium">Prep for a certification</span>
-                    </div>
+                    <span class="text-sm font-medium">Learn AI and more</span>
                 </div>
-                <div class="flex items-center">
-                    <div class="flex items-center gap-3 text-white px-4 py-2 rounded-lg w-fit">
-                        <div class="w-6 h-6 rounded-full flex items-center justify-center">
-                            <i class="fas fa-message text-white text-xs"></i>
-                        </div>
-                        <span class="text-sm font-medium">Practice with AI coaching</span>
+                <div class="flex items-center gap-3 text-white px-4 py-2 rounded-lg bg-[#2a2c42] w-fit mx-auto sm:mx-0">
+                    <div class="w-6 h-6 rounded-full flex items-center justify-center">
+                        <i class="fas fa-trophy text-white text-xs"></i>
                     </div>
-                    <div class="flex items-center gap-3 text-white px-4 py-2 rounded-lg w-fit">
-                        <div class="w-6 h-6 rounded-full flex items-center justify-center">
-                            <i class="fas fa-lightbulb text-white text-xs"></i>
-                        </div>
-                        <span class="text-sm font-medium">Advance your career</span>
+                    <span class="text-sm font-medium">Prep for a certification</span>
+                </div>
+                <div class="flex items-center gap-3 text-white px-4 py-2 rounded-lg bg-[#2a2c42] w-fit mx-auto sm:mx-0">
+                    <div class="w-6 h-6 rounded-full flex items-center justify-center">
+                        <i class="fas fa-message text-white text-xs"></i>
                     </div>
+                    <span class="text-sm font-medium">Practice with AI coaching</span>
+                </div>
+                <div class="flex items-center gap-3 text-white px-4 py-2 rounded-lg bg-[#2a2c42] w-fit mx-auto sm:mx-0">
+                    <div class="w-6 h-6 rounded-full flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-white text-xs"></i>
+                    </div>
+                    <span class="text-sm font-medium">Advance your career</span>
                 </div>
             </div>
-            <button class="bg-gray-100 mt-6 hover:bg-white text-[#202230] px-10 py-2 text-sm rounded-sm w-fit">Learn
-                More</button>
-            <p class="text-white mt-5">Starting at ₦7,500/month</p>
+
+            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-5 space-y-4 sm:space-y-0">
+                <button
+                    class="bg-white hover:bg-gray-100 text-[#202230] px-8 lg:px-10 py-3 text-base lg:text-lg rounded-lg font-medium">
+                    Learn More
+                </button>
+                <span class="text-white text-sm lg:text-base">Starting at ₦7,500/month</span>
+            </div>
         </div>
-        <div>
-            <img src="https://frontends.udemycdn.com/staticx/udemy/images/ai-career-banner/ai-career@1x.webp" alt="">
+
+        <div class="mt-8 lg:mt-0 flex-shrink-0">
+            <img src="https://frontends.udemycdn.com/staticx/udemy/images/ai-career-banner/ai-career@1x.webp" alt=""
+                class="w-full max-w-md lg:max-w-lg h-auto rounded-2xl" />
         </div>
     </div>
 
@@ -284,17 +294,19 @@
         <p class="text-base font-normal text-gray-600">From critical skills to technical topics, Udemy supports your
             professional development.</p>
     </div>
-    <div class="ml-16 border-b w-[90%]">
-        <div class="flex font-semibold space-x-7 mb-4">
-            <h1 class=" cursor-pointer">Artificial Intelligence (AI)</h1>
+    <div class="ml-4 lg:ml-16 w-[95%] lg:w-[90%]">
+        <div class="flex flex-wrap font-semibold gap-4 lg:space-x-7 mb-4 text-sm lg:text-base">
+            <h1 class="cursor-pointer">Artificial Intelligence (AI)</h1>
             <h1 class="text-gray-600 hover:text-gray-950 cursor-pointer">Python</h1>
             <h1 class="text-gray-600 hover:text-gray-950 cursor-pointer">Microsoft Excel</h1>
             <h1 class="text-gray-600 hover:text-gray-950 cursor-pointer">AI Agents & Agentic AI</h1>
             <h1 class="text-gray-600 hover:text-gray-950 cursor-pointer">Digital Marketing</h1>
             <h1 class="text-gray-600 hover:text-gray-950 cursor-pointer">Amazon AWS</h1>
         </div>
-        <div class="border-b w-[15%] border-black"></div>
+
+        <div class="border-b border-black w-fit min-w-[120px]"></div>
     </div>
+
 
     <div class="mb-16">
         <div class="mx-12 mt-10 mb-[25px]">
@@ -422,27 +434,30 @@
     </div>
 
     <div class="bg-gray-200 py-10 px-3 mb-10 flex flex-col items-center justify-center space-y-5">
-        <h1 class="text-center text-gray-600 text-lg font-normal">Trusted by over 17,000 companies and millions of
-            learners around the world</h1>
-        <div class="flex md:flex-row flex-col items-center justify-center gap-16">
+        <h1 class="text-center text-gray-600 text-lg font-normal">
+            Trusted by over 17,000 companies and millions of learners around the world
+        </h1>
+
+        <div class="flex flex-wrap items-center justify-center gap-10 md:gap-16 max-w-6xl">
             <img src="https://cms-images.udemycdn.com/96883mtakkm8/3E0eIh3tWHNWADiHNBmW4j/3444d1a4d029f283aa7d10ccf982421e/volkswagen_logo.svg"
-                alt="">
+                alt="" class="max-h-8 md:max-h-10">
             <img src="https://cms-images.udemycdn.com/96883mtakkm8/2pNyDO0KV1eHXk51HtaAAz/090fac96127d62e784df31e93735f76a/samsung_logo.svg"
-                alt="">
+                alt="" class="max-h-8 md:max-h-10">
             <img src="https://cms-images.udemycdn.com/96883mtakkm8/3YzfvEjCAUi3bKHLW2h1h8/ec478fa1ed75f6090a7ecc9a083d80af/cisco_logo.svg"
-                alt="">
+                alt="" class="max-h-8 md:max-h-10">
             <img src="https://cms-images.udemycdn.com/96883mtakkm8/23XnhdqwGCYUhfgIJzj3PM/77259d1ac2a7d771c4444e032ee40d9e/vimeo_logo_resized-2.svg"
-                alt="">
+                alt="" class="max-h-8 md:max-h-10">
             <img src="https://cms-images.udemycdn.com/96883mtakkm8/1UUVZtTGuvw23MwEnDPUr3/2683579ac045486a0aff67ce8a5eb240/procter_gamble_logo.svg"
-                alt="">
+                alt="" class="max-h-8 md:max-h-10">
             <img src="https://cms-images.udemycdn.com/96883mtakkm8/1GoAicYDYxxRPGnCpg93gi/a8b6190cc1a24e21d6226200ca488eb8/hewlett_packard_enterprise_logo.svg"
-                alt="">
+                alt="" class="max-h-8 md:max-h-10">
             <img src="https://cms-images.udemycdn.com/96883mtakkm8/2tQm6aYrWQzlKBQ95W00G/c7aaf002814c2cde71d411926eceaefa/citi_logo.svg"
-                alt="">
+                alt="" class="max-h-8 md:max-h-10">
             <img src="https://cms-images.udemycdn.com/96883mtakkm8/7guDRVYa2DZD0wD1SyxREP/b704dfe6b0ffb3b26253ec36b4aab505/ericsson_logo.svg"
-                alt="">
+                alt="" class="max-h-8 md:max-h-10">
         </div>
     </div>
+
 
     <div class="my-10 px-10">
         <h1 class="ml-5 font-semibold text-2xl mb-5">Join others transforming their lives through learning</h1>
@@ -598,73 +613,91 @@
         </div>
     </div>
 
-    <div class="p-8 ml-10">
-        <h1 class="text-4xl font-bold text-gray-900 mb-2">Ready to reimagine your career?</h1>
-        <p class="text-gray-600 mb-10">Get the skills and real-world experience employers want with Career Accelerators.
+    <div class="p-8 md:ml-10 ml-0">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+            Ready to reimagine your career?
+        </h1>
+
+        <p class="text-gray-600 mb-10">
+            Get the skills and real-world experience employers want with Career Accelerators.
         </p>
 
-        <div class="flex gap-6 mb-8">
-            <div class="border p-3 hover:bg-gray-100 transition-all border-gray-300 rounded-2xl">
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+            <!-- Card -->
+            <div class="border p-3 hover:bg-gray-100 transition-all border-gray-300 rounded-2xl cursor-pointer">
                 <div class="object-cover mb-4">
                     <img src="quiet_empty_urban_street_with_long_shadows_cinematic_lighting_moody_and_minima_20250810122556_02.png"
-                        alt="" class="w-[340px] h-[220px] rounded-xl">
+                        alt="" class="w-full h-[220px] object-cover rounded-xl">
                 </div>
+
                 <h3 class="font-semibold text-gray-800">Full Stack Web Developer</h3>
-                <div class="flex items-center gap-3 my-3">
-                    <div class="flex gap-2 items-center border text-xs border-gray-300 rounded-md w-fit px-2 py-[2px]">
+
+                <div class="flex flex-wrap items-center gap-3 my-3">
+                    <div class="flex gap-2 items-center border text-xs border-gray-300 rounded-md px-2 py-[2px]">
                         <span class="fa fa-star"></span>
                         <h3>4.7</h3>
                     </div>
-                    <div class="border text-xs border-gray-300 rounded-md w-fit px-2 py-[2px]">
+                    <div class="border text-xs border-gray-300 rounded-md px-2 py-[2px]">
                         <h3>46k ratings</h3>
                     </div>
-                    <div class="border text-xs border-gray-300 rounded-md w-fit px-2 py-[2px]">
+                    <div class="border text-xs border-gray-300 rounded-md px-2 py-[2px]">
                         <h3>88 total hours</h3>
                     </div>
                 </div>
             </div>
-            <div class="border p-3 hover:bg-gray-100 transition-all border-gray-300 rounded-2xl">
+
+            <!-- Card -->
+            <div class="border p-3 hover:bg-gray-100 transition-all border-gray-300 rounded-2xl cursor-pointer">
                 <div class="object-cover mb-4">
                     <img src="ChatGPT Image Aug 31, 2025, 03_57_22 PM.png" alt=""
-                        class="w-[340px] h-[220px] rounded-xl">
+                        class="w-full h-[220px] object-cover rounded-xl">
                 </div>
+
                 <h3 class="font-semibold text-gray-800">Digital Marketer</h3>
-                <div class="flex items-center gap-3 my-3">
-                    <div class="flex gap-2 items-center border text-xs border-gray-300 rounded-md w-fit px-2 py-[2px]">
+
+                <div class="flex flex-wrap items-center gap-3 my-3">
+                    <div class="flex gap-2 items-center border text-xs border-gray-300 rounded-md px-2 py-[2px]">
                         <span class="fa fa-star"></span>
                         <h3>4.7</h3>
                     </div>
-                    <div class="border text-xs border-gray-300 rounded-md w-fit px-2 py-[2px]">
+                    <div class="border text-xs border-gray-300 rounded-md px-2 py-[2px]">
                         <h3>3.7k ratings</h3>
                     </div>
-                    <div class="border text-xs border-gray-300 rounded-md w-fit px-2 py-[2px]">
+                    <div class="border text-xs border-gray-300 rounded-md px-2 py-[2px]">
                         <h3>28.4 total hours</h3>
                     </div>
                 </div>
             </div>
-            <div class="border p-3 hover:bg-gray-100 transition-all border-gray-300 rounded-2xl">
+
+            <!-- Card -->
+            <div class="border p-3 hover:bg-gray-100 transition-all border-gray-300 rounded-2xl cursor-pointer">
                 <div class="object-cover mb-4">
                     <img src="High_angle_view_of_a_brokenhearted_man_at_a_lonely_crossroads_in_a_dark_decayi_20250901160431_04.png"
-                        alt="" class="w-[340px] h-[220px] rounded-xl">
+                        alt="" class="w-full h-[220px] object-cover rounded-xl">
                 </div>
+
                 <h3 class="font-semibold text-gray-800">Data Scientist</h3>
-                <div class="flex items-center gap-3 my-3">
-                    <div class="flex gap-2 items-center border text-xs border-gray-300 rounded-md w-fit px-2 py-[2px]">
+
+                <div class="flex flex-wrap items-center gap-3 my-3">
+                    <div class="flex gap-2 items-center border text-xs border-gray-300 rounded-md px-2 py-[2px]">
                         <span class="fa fa-star"></span>
                         <h3>4.6</h3>
                     </div>
-                    <div class="border text-xs border-gray-300 rounded-md w-fit px-2 py-[2px]">
+                    <div class="border text-xs border-gray-300 rounded-md px-2 py-[2px]">
                         <h3>223k ratings</h3>
                     </div>
-                    <div class="border text-xs border-gray-300 rounded-md w-fit px-2 py-[2px]">
+                    <div class="border text-xs border-gray-300 rounded-md px-2 py-[2px]">
                         <h3>47.1 total hours</h3>
                     </div>
                 </div>
             </div>
+
         </div>
 
-        <a href="#" class="text-purple-700 font-semibold hover:text-purple-800">All Career Accelerators <i
-                class="fas fa-arrow-right ml-1"></i></a>
+        <a href="#" class="text-purple-700 font-semibold hover:text-purple-800 mt-8 inline-block">
+            All Career Accelerators <i class="fas fa-arrow-right ml-1"></i>
+        </a>
     </div>
 
     <div class="ml-16 mb-5 space-y-3">
@@ -1066,155 +1099,166 @@
                     </p>
                 </div>
                 <div class="max-w-7xl mx-auto px-8 mt-6 flex items-center gap-8">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30'%3E%3Crect fill='%234a5568' width='100' height='30' rx='3'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='10' fill='%23fff'%3ENasdaq%3C/text%3E%3C/svg%3E"
-                        alt="Nasdaq" class="h-8">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30'%3E%3Crect fill='%234a5568' width='100' height='30' rx='3'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='10' fill='%23fff'%3EVW%3C/text%3E%3C/svg%3E"
-                        alt="VW" class="h-8">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30'%3E%3Crect fill='%234a5568' width='100' height='30' rx='3'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='10' fill='%23fff'%3ENetApp%3C/text%3E%3C/svg%3E"
-                        alt="NetApp" class="h-8">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30'%3E%3Crect fill='%234a5568' width='100' height='30' rx='3'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='10' fill='%23fff'%3Eeventbrite%3C/text%3E%3C/svg%3E"
-                        alt="Eventbrite" class="h-8">
-                </div>
-            </div>
+                    <div class="max-w-7xl mx-auto px-8 mt-6">
+                        <div class="flex flex-wrap items-center justify-center md:justify-start gap-6 md:gap-8">
 
-            <footer class="bg-gray-900 text-gray-300 py-12">
-                <div class="max-w-7xl mx-auto px-8">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
-                        <div>
-                            <h3 class="text-white font-bold text-base mb-5">Explore top skills and certifications</h3>
-                            <h4 class="text-white font-semibold text-sm mb-4 mt-8">In-demand Careers</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">Data Scientist</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Full Stack Web Developer</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Cloud Engineer</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Project Manager</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Game Developer</a></li>
-                                <li><a href="#" class="text-sm hover:underline">All Career Accelerators</a></li>
-                            </ul>
-                            <h4 class="text-white font-semibold text-sm mb-4 mt-8">Certifications by Skill</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">Cybersecurity Certification</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Project Management Certification</a>
-                                </li>
-                                <li><a href="#" class="text-sm hover:underline">Cloud Certification</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Data Analytics Certification</a></li>
-                                <li><a href="#" class="text-sm hover:underline">HR Management Certification</a></li>
-                                <li><a href="#" class="text-sm hover:underline">See all Certifications</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-white font-semibold text-sm mb-4">Web Development</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">Web Development</a></li>
-                                <li><a href="#" class="text-sm hover:underline">JavaScript</a></li>
-                                <li><a href="#" class="text-sm hover:underline">React JS</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Angular</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Java</a></li>
-                            </ul>
-                            <h4 class="text-white font-semibold text-sm mb-4 mt-8">Data Science</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">Data Science</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Python</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Machine Learning</a></li>
-                                <li><a href="#" class="text-sm hover:underline">ChatGPT</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Deep Learning</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-white font-semibold text-sm mb-4">IT Certifications</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">Amazon AWS</a></li>
-                                <li><a href="#" class="text-sm hover:underline">AWS Certified Cloud Practitioner</a>
-                                </li>
-                                <li><a href="#" class="text-sm hover:underline">AZ-900: Microsoft Azure Fundamentals</a>
-                                </li>
-                                <li><a href="#" class="text-sm hover:underline">AWS Certified Solutions Architect -
-                                        Associate</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Kubernetes</a></li>
-                            </ul>
-                            <h4 class="text-white font-semibold text-sm mb-4 mt-8">Communication</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">Communication Skills</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Presentation Skills</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Public Speaking</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Writing</a></li>
-                                <li><a href="#" class="text-sm hover:underline">PowerPoint</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-white font-semibold text-sm mb-4">Leadership</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">Leadership</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Management Skills</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Project Management</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Personal Productivity</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Emotional Intelligence</a></li>
-                            </ul>
-                            <h4 class="text-white font-semibold text-sm mb-4 mt-8">Business Analytics & Intelligence
-                            </h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">Microsoft Excel</a></li>
-                                <li><a href="#" class="text-sm hover:underline">SQL</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Microsoft Power BI</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Data Analysis</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Business Analysis</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-white font-semibold text-sm mb-4">About</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">About us</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Careers</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Contact us</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Blog</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Investors</a></li>
-                            </ul>
-                            <h4 class="text-white font-semibold text-sm mb-4 mt-8">Discover Udemy</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">Get the app</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Teach on Udemy</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Teaching and Pricing</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Affiliate</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Help and Support</a></li>
-                            </ul>
-                            <h4 class="text-white font-semibold text-sm mb-4 mt-8">Udemy for Business</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">Udemy Business</a></li>
-                            </ul>
-                            <h4 class="text-white font-semibold text-sm mb-4 mt-8">Legal & Accessibility</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="text-sm hover:underline">Accessibility statement</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Privacy policy</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Sitemap</a></li>
-                                <li><a href="#" class="text-sm hover:underline">Terms</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="border-t border-gray-700 pt-8 flex justify-between items-center">
-                        <div class="flex items-center">
-                            <svg class="h-10 w-10 text-purple-500 mr-2" viewBox="0 0 91 34" fill="currentColor">
-                                <path d="M14.05 8.112L7.024 4.056 0 8.112v4.056l7.024 4.056 7.026-4.056z"></path>
-                                <path d="M0 16.224v4.056l7.024 4.056 7.026-4.056v-4.056l-7.026 4.056z"></path>
-                                <path d="M0 24.336v4.056l7.024 4.056 7.026-4.056v-4.056l-7.026 4.056z"></path>
-                                <path d="M25.031 28.392l7.024-4.056v-4.056l-7.024 4.056-7.024-4.056v4.056z"></path>
-                                <path d="M25.031 4.056L18.007 0l-7.024 4.056v4.056l7.024-4.056 7.024 4.056z"></path>
-                                <path
-                                    d="M39.787 15.123h3.897c.21 0 .38.149.414.357l.164.989c.65-.858 1.636-1.52 3.027-1.52 2.259 0 3.521 1.322 3.521 3.84v6.413c0 .278-.218.5-.495.5h-2.104c-.278 0-.496-.222-.496-.5v-5.712c0-1.279-.579-1.855-1.607-1.855-1.003 0-1.811.576-2.352 1.279v6.288c0 .278-.217.5-.495.5h-2.104c-.278 0-.496-.222-.496-.5v-9.579c0-.277.218-.5.496-.5zM55.038 15.123h2.104c.278 0 .496.223.496.5v9.579c0 .278-.218.5-.496.5h-2.104c-.277 0-.495-.222-.495-.5v-9.579c0-.277.218-.5.495-.5zM61.778 15.123h3.897c.21 0 .38.149.414.357l.164.989c.65-.858 1.636-1.52 3.027-1.52 2.259 0 3.521 1.322 3.521 3.84v6.413c0 .278-.218.5-.495.5h-2.104c-.278 0-.496-.222-.496-.5v-5.712c0-1.279-.579-1.855-1.607-1.855-1.003 0-1.811.576-2.352 1.279v6.288c0 .278-.218.5-.495.5h-2.104c-.278 0-.496-.222-.496-.5v-9.579c0-.277.218-.5.496-.5zM77.377 14.949c2.82 0 4.738 1.856 4.738 5.218 0 .264-.149.5-.414.5h-6.958c.197 1.42 1.187 2.162 2.655 2.162 1.003 0 1.81-.338 2.424-.826.205-.163.506-.107.64.118l.682 1.125c.138.224.086.509-.134.658-1.045.71-2.31 1.1-3.862 1.1-3.27 0-5.213-2.094-5.213-5.025 0-2.93 1.944-5.03 5.442-5.03zm-2.655 4.164h4.987c-.148-1.42-.974-2.098-2.359-2.098-1.385 0-2.359.835-2.628 2.098z">
-                                </path>
-                            </svg>
-                            <span class="text-sm text-gray-400">© 2025 Udemy, Inc.</span>
-                        </div>
-                        <div class="flex items-center gap-6">
-                            <button class="text-sm hover:underline">Cookie settings</button>
-                            <button class="flex items-center gap-2 text-sm hover:underline">
-                                <i class="fas fa-globe"></i>
-                                English
-                            </button>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30'%3E%3Crect fill='%234a5568' width='100' height='30' rx='3'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='10' fill='%23fff'%3ENasdaq%3C/text%3E%3C/svg%3E"
+                                alt="Nasdaq" class="h-8">
+
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30'%3E%3Crect fill='%234a5568' width='100' height='30' rx='3'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='10' fill='%23fff'%3EVW%3C/text%3E%3C/svg%3E"
+                                alt="VW" class="h-8">
+
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30'%3E%3Crect fill='%234a5568' width='100' height='30' rx='3'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='10' fill='%23fff'%3ENetApp%3C/text%3E%3C/svg%3E"
+                                alt="NetApp" class="h-8">
+
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30'%3E%3Crect fill='%234a5568' width='100' height='30' rx='3'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='10' fill='%23fff'%3Eeventbrite%3C/text%3E%3C/svg%3E"
+                                alt="Eventbrite" class="h-8">
+
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+
+                <footer class="bg-gray-900 text-gray-300 py-12">
+                    <div class="max-w-7xl mx-auto px-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+                            <div>
+                                <h3 class="text-white font-bold text-base mb-5">Explore top skills and certifications
+                                </h3>
+                                <h4 class="text-white font-semibold text-sm mb-4 mt-8">In-demand Careers</h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">Data Scientist</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Full Stack Web Developer</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Cloud Engineer</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Project Manager</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Game Developer</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">All Career Accelerators</a></li>
+                                </ul>
+                                <h4 class="text-white font-semibold text-sm mb-4 mt-8">Certifications by Skill</h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">Cybersecurity Certification</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Project Management Certification</a>
+                                    </li>
+                                    <li><a href="#" class="text-sm hover:underline">Cloud Certification</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Data Analytics Certification</a>
+                                    </li>
+                                    <li><a href="#" class="text-sm hover:underline">HR Management Certification</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">See all Certifications</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm mb-4">Web Development</h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">Web Development</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">JavaScript</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">React JS</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Angular</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Java</a></li>
+                                </ul>
+                                <h4 class="text-white font-semibold text-sm mb-4 mt-8">Data Science</h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">Data Science</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Python</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Machine Learning</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">ChatGPT</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Deep Learning</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm mb-4">IT Certifications</h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">Amazon AWS</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">AWS Certified Cloud Practitioner</a>
+                                    </li>
+                                    <li><a href="#" class="text-sm hover:underline">AZ-900: Microsoft Azure
+                                            Fundamentals</a>
+                                    </li>
+                                    <li><a href="#" class="text-sm hover:underline">AWS Certified Solutions Architect -
+                                            Associate</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Kubernetes</a></li>
+                                </ul>
+                                <h4 class="text-white font-semibold text-sm mb-4 mt-8">Communication</h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">Communication Skills</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Presentation Skills</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Public Speaking</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Writing</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">PowerPoint</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm mb-4">Leadership</h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">Leadership</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Management Skills</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Project Management</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Personal Productivity</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Emotional Intelligence</a></li>
+                                </ul>
+                                <h4 class="text-white font-semibold text-sm mb-4 mt-8">Business Analytics & Intelligence
+                                </h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">Microsoft Excel</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">SQL</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Microsoft Power BI</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Data Analysis</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Business Analysis</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm mb-4">About</h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">About us</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Careers</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Contact us</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Blog</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Investors</a></li>
+                                </ul>
+                                <h4 class="text-white font-semibold text-sm mb-4 mt-8">Discover Udemy</h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">Get the app</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Teach on Udemy</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Teaching and Pricing</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Affiliate</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Help and Support</a></li>
+                                </ul>
+                                <h4 class="text-white font-semibold text-sm mb-4 mt-8">Udemy for Business</h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">Udemy Business</a></li>
+                                </ul>
+                                <h4 class="text-white font-semibold text-sm mb-4 mt-8">Legal & Accessibility</h4>
+                                <ul class="space-y-3">
+                                    <li><a href="#" class="text-sm hover:underline">Accessibility statement</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Privacy policy</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Sitemap</a></li>
+                                    <li><a href="#" class="text-sm hover:underline">Terms</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="border-t border-gray-700 pt-8 flex justify-between items-center">
+                            <div class="flex items-center">
+                                <svg class="h-10 w-10 text-purple-500 mr-2" viewBox="0 0 91 34" fill="currentColor">
+                                    <path d="M14.05 8.112L7.024 4.056 0 8.112v4.056l7.024 4.056 7.026-4.056z"></path>
+                                    <path d="M0 16.224v4.056l7.024 4.056 7.026-4.056v-4.056l-7.026 4.056z"></path>
+                                    <path d="M0 24.336v4.056l7.024 4.056 7.026-4.056v-4.056l-7.026 4.056z"></path>
+                                    <path d="M25.031 28.392l7.024-4.056v-4.056l-7.024 4.056-7.024-4.056v4.056z"></path>
+                                    <path d="M25.031 4.056L18.007 0l-7.024 4.056v4.056l7.024-4.056 7.024 4.056z"></path>
+                                    <path
+                                        d="M39.787 15.123h3.897c.21 0 .38.149.414.357l.164.989c.65-.858 1.636-1.52 3.027-1.52 2.259 0 3.521 1.322 3.521 3.84v6.413c0 .278-.218.5-.495.5h-2.104c-.278 0-.496-.222-.496-.5v-5.712c0-1.279-.579-1.855-1.607-1.855-1.003 0-1.811.576-2.352 1.279v6.288c0 .278-.217.5-.495.5h-2.104c-.278 0-.496-.222-.496-.5v-9.579c0-.277.218-.5.496-.5zM55.038 15.123h2.104c.278 0 .496.223.496.5v9.579c0 .278-.218.5-.496.5h-2.104c-.277 0-.495-.222-.495-.5v-9.579c0-.277.218-.5.495-.5zM61.778 15.123h3.897c.21 0 .38.149.414.357l.164.989c.65-.858 1.636-1.52 3.027-1.52 2.259 0 3.521 1.322 3.521 3.84v6.413c0 .278-.218.5-.495.5h-2.104c-.278 0-.496-.222-.496-.5v-5.712c0-1.279-.579-1.855-1.607-1.855-1.003 0-1.811.576-2.352 1.279v6.288c0 .278-.218.5-.495.5h-2.104c-.278 0-.496-.222-.496-.5v-9.579c0-.277.218-.5.496-.5zM77.377 14.949c2.82 0 4.738 1.856 4.738 5.218 0 .264-.149.5-.414.5h-6.958c.197 1.42 1.187 2.162 2.655 2.162 1.003 0 1.81-.338 2.424-.826.205-.163.506-.107.64.118l.682 1.125c.138.224.086.509-.134.658-1.045.71-2.31 1.1-3.862 1.1-3.27 0-5.213-2.094-5.213-5.025 0-2.93 1.944-5.03 5.442-5.03zm-2.655 4.164h4.987c-.148-1.42-.974-2.098-2.359-2.098-1.385 0-2.359.835-2.628 2.098z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm text-gray-400">© 2025 Udemy, Inc.</span>
+                            </div>
+                            <div class="flex items-center gap-6">
+                                <button class="text-sm hover:underline">Cookie settings</button>
+                                <button class="flex items-center gap-2 text-sm hover:underline">
+                                    <i class="fas fa-globe"></i>
+                                    English
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
